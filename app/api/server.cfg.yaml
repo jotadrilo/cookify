@@ -1,0 +1,9 @@
+package: api
+
+generate:
+  gin-server: true
+
+output: api-server.gen.go
+
+compatibility:
+  disable-flatten-additional-properties: true

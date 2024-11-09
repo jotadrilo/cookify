@@ -1,0 +1,2303 @@
+[
+  {
+    "uuid": "e03dc7b8-937c-4361-8278-530b4606c246",
+    "slug": "arroz-cocido-basmati-sabroz-brillante-pack-2",
+    "display_name_lang_es_es": "Arroz cocido basmati Sabroz",
+    "vendors": [
+      "Sabroz"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 4.6,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 164,
+      "fat_total": 2.2,
+      "fat_saturated": 0.3,
+      "salt": 0.35,
+      "carbohydrate_total": 31,
+      "protein": 3.9,
+      "fiber": 1.6
+    }
+  },
+  {
+    "uuid": "bf199d46-88e7-4084-b278-0b083f55a1fb",
+    "slug": "quinoa-cocida-blanca-roja-sabroz-brillante-pack-2",
+    "display_name_lang_es_es": "Quinoa cocida blanca y roja Sabroz",
+    "vendors": [
+      "Sabroz"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 5.6,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 147000,
+      "fat_total": 3.1,
+      "fat_saturated": 0.5,
+      "salt": 0.41,
+      "carbohydrate_total": 24,
+      "carbohydrate_sugar": 0.6,
+      "protein": 4.7,
+      "fiber": 3
+    }
+  },
+  {
+    "uuid": "98a383d3-866f-4ede-a14a-819d22305f0c",
+    "slug": "garbanzo-cocido-hacendado-tarro",
+    "display_name_lang_es_es": "Garbanzo cocido Hacendado",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 3.096,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 90,
+      "fat_total": 2.2,
+      "fat_saturated": 0.5,
+      "salt": 0.8,
+      "carbohydrate_total": 9.5,
+      "carbohydrate_sugar": 0.7,
+      "protein": 5.5
+    }
+  },
+  {
+    "uuid": "ac546a14-21c7-4dcb-8529-370975943cfe",
+    "slug": "lenteja-pardina-hacendado-categoria-extra-paquete",
+    "display_name_lang_es_es": "Lenteja pardina Hacendado",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 2.14,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 320000,
+      "fat_total": 1.2,
+      "fat_saturated": 0.2,
+      "salt": 0.05,
+      "carbohydrate_total": 48.1,
+      "carbohydrate_sugar": 1.3,
+      "protein": 24.5,
+      "fiber": 9.6
+    }
+  },
+  {
+    "uuid": "a46015af-ff02-4f7d-9aa1-b14cb2fb121f",
+    "slug": "pajaritas-vegetales-hacendado-paquete",
+    "display_name_lang_es_es": "Pajaritas vegetales Hacendado",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 2.04,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 347000,
+      "fat_total": 1.5,
+      "fat_saturated": 0.3,
+      "salt": 0.03,
+      "carbohydrate_total": 68,
+      "carbohydrate_sugar": 3.1,
+      "protein": 13,
+      "fiber": 4.2
+    }
+  },
+  {
+    "uuid": "99b94a47-e532-4c2a-a2a7-796891a6c7c0",
+    "slug": "pasta-tortiglioni-armando-paquete",
+    "display_name_lang_es_es": "Pasta tortiglioni Armando",
+    "vendors": [
+      "Armando"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 2.54,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 354000,
+      "fat_total": 1.3,
+      "fat_saturated": 0.3,
+      "salt": 0.005,
+      "carbohydrate_total": 70.2,
+      "carbohydrate_sugar": 3.2,
+      "protein": 14,
+      "fiber": 2.7
+    }
+  },
+  {
+    "uuid": "e51c74fd-7bbd-4ac2-90f3-1242fab12f3a",
+    "slug": "pasta-penne-armando-paquete",
+    "display_name_lang_es_es": "Pasta penne Armando",
+    "vendors": [
+      "Armando"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 2.54,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 354000,
+      "fat_total": 1.3,
+      "fat_saturated": 0.3,
+      "salt": 0.005,
+      "carbohydrate_total": 70.2,
+      "carbohydrate_sugar": 3.2,
+      "protein": 14,
+      "fiber": 2.7
+    }
+  },
+  {
+    "uuid": "c91ada61-d946-4756-936f-98d62d9a1208",
+    "slug": "pasta-fusilli-armando-paquete",
+    "display_name_lang_es_es": "Pasta fusilli Armando",
+    "vendors": [
+      "Armando"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 2.54,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 354000,
+      "fat_total": 1.3,
+      "fat_saturated": 0.3,
+      "salt": 0.005,
+      "carbohydrate_total": 70.2,
+      "carbohydrate_sugar": 3.2,
+      "protein": 14,
+      "fiber": 2.7
+    }
+  },
+  {
+    "uuid": "a46edb56-48b6-43e9-98b4-4de6329f6078",
+    "slug": "anacardo-natural-hacendado-paquete",
+    "display_name_lang_es_es": "Anacardo natural Hacendado",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 11.75,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 604000,
+      "fat_total": 48.2,
+      "fat_saturated": 8.2,
+      "fat_monounsaturated": 31.1,
+      "fat_polyunsaturated": 8.8,
+      "carbohydrate_total": 19,
+      "carbohydrate_sugar": 7.7,
+      "protein": 21.9,
+      "fiber": 3.6
+    }
+  },
+  {
+    "uuid": "660f4ff9-ab09-4689-b426-4bbb6470fabe",
+    "slug": "cocktail-natural-hacendado-paquete",
+    "display_name_lang_es_es": "Cocktail natural Hacendado",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 12.25,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 651000,
+      "fat_total": 58.8,
+      "fat_saturated": 5.9,
+      "fat_monounsaturated": 20.5,
+      "fat_polyunsaturated": 32.3,
+      "carbohydrate_total": 5.6,
+      "carbohydrate_sugar": 5.2,
+      "protein": 20.4,
+      "fiber": 9
+    }
+  },
+  {
+    "uuid": "94991163-a077-492b-a141-a3a4cb1933f6",
+    "slug": "placas-lasana-precocidas-pavo-caja",
+    "display_name_lang_es_es": "Placas para lasaña precocidas El Pavo",
+    "vendors": [
+      "El Pavo"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 7.3,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 360000,
+      "fat_total": 1.4,
+      "fat_saturated": 0.2,
+      "carbohydrate_total": 73,
+      "carbohydrate_sugar": 1.5,
+      "protein": 12,
+      "fiber": 3.9
+    }
+  },
+  {
+    "uuid": "fdbddc22-40d3-42c2-a4bb-f58f4e3dd778",
+    "slug": "cerveza-aguila-sin-filtrar-botellin",
+    "display_name_lang_es_es": "Cerveza El Águila sin filtrar",
+    "vendors": [
+      "El Águila"
+    ],
+    "unit": "l",
+    "price": {
+      "uuid": "",
+      "price": 3,
+      "quantity": 1
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 49000,
+      "salt": 0.01,
+      "carbohydrate_total": 4.2,
+      "protein": 0.5
+    }
+  },
+  {
+    "uuid": "8951ddbe-b2e1-42ba-bcc1-298f7a416b6a",
+    "slug": "cerveza-especial-estrella-galicia-botellin",
+    "display_name_lang_es_es": "Cerveza especial Estrella Galicia",
+    "vendors": [
+      "Estrella Galicia"
+    ],
+    "unit": "l",
+    "price": {
+      "uuid": "",
+      "price": 2.68,
+      "quantity": 1
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 47000
+    }
+  },
+  {
+    "uuid": "95d4ee87-7a66-483d-b0b7-3a3928f5e1df",
+    "slug": "cafe-grano-natural-hacendado-paquete",
+    "display_name_lang_es_es": "Café en grano natural Hacendado",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 10.2,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 320000,
+      "fat_total": 11,
+      "fat_saturated": 5,
+      "fat_monounsaturated": 1.1,
+      "fat_polyunsaturated": 4.9,
+      "salt": 0.01,
+      "carbohydrate_total": 11,
+      "carbohydrate_sugar": 2.3,
+      "protein": 16,
+      "fiber": 55
+    }
+  },
+  {
+    "uuid": "8ca5a651-6326-4329-beb3-5258d58eb053",
+    "slug": "filetes-pechuga-pavo-bandeja",
+    "display_name_lang_es_es": "Filetes pechuga de pavo",
+    "vendors": [
+      ""
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 8,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 103000,
+      "fat_total": 0.9,
+      "fat_saturated": 0.3,
+      "salt": 0.26,
+      "protein": 24
+    }
+  },
+  {
+    "uuid": "cae1503f-7eed-495c-a9e7-b05ebacc53c9",
+    "slug": "filetes-pavo-contramuslo-bandeja",
+    "display_name_lang_es_es": "Filetes de pavo contramuslo",
+    "vendors": [
+      ""
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 7.9,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 101000,
+      "fat_total": 2.4,
+      "fat_saturated": 1,
+      "salt": 0.31,
+      "protein": 20
+    }
+  },
+  {
+    "uuid": "554ebc19-897b-4169-8fb3-ac67342ca28b",
+    "slug": "filetes-pechuga-pollo-bandeja",
+    "display_name_lang_es_es": "Filetes pechuga de pollo",
+    "vendors": [
+      ""
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 7.4,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 108000,
+      "fat_total": 1.8,
+      "fat_saturated": 0.6,
+      "salt": 0.19,
+      "carbohydrate_total": 0.5,
+      "protein": 22
+    }
+  },
+  {
+    "uuid": "f3ba5344-0b9b-4570-b32b-296f7c0f3dcb",
+    "slug": "contramuslos-pollo-deshuesados-sin-piel-bandeja",
+    "display_name_lang_es_es": "Contramuslos de pollo deshuesados y sin piel",
+    "vendors": [
+      ""
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 7,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 127000,
+      "fat_total": 4.9,
+      "fat_saturated": 1.9,
+      "salt": 0.22,
+      "carbohydrate_total": 1.6,
+      "carbohydrate_sugar": 0.6,
+      "protein": 19
+    }
+  },
+  {
+    "uuid": "43eb57d6-d4ed-4d64-a549-b11e72c394c6",
+    "slug": "pechugas-enteras-pollo-bandeja",
+    "display_name_lang_es_es": "Pechugas enteras de pollo",
+    "vendors": [
+      ""
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 6.65,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 108000,
+      "fat_total": 1.8,
+      "fat_saturated": 0.6,
+      "salt": 0.19,
+      "carbohydrate_total": 0.5,
+      "protein": 22
+    }
+  },
+  {
+    "uuid": "32a23810-a7cd-4f83-ab94-4104024c7381",
+    "slug": "pechugas-pollo-finas-hierbas-marinadas-bandeja",
+    "display_name_lang_es_es": "Filetes pechuga de pollo finas hierbas marinadas",
+    "vendors": [
+      ""
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 7.4,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 86500,
+      "fat_total": 1.1,
+      "fat_saturated": 0.4,
+      "salt": 2,
+      "carbohydrate_total": 1.2,
+      "carbohydrate_sugar": 0.1,
+      "protein": 17.6
+    }
+  },
+  {
+    "uuid": "dfbcdf9b-dacf-48dd-8f83-39172073e7ea",
+    "slug": "contramuslos-deshuesados-sin-piel-pollo-certificado-alimentado-con-50-maiz-bandeja",
+    "display_name_lang_es_es": "Contramuslos deshuesados y sin piel de pollo certificado alimentado con un 50% de maíz",
+    "vendors": [
+      ""
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 8,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 130000,
+      "fat_total": 5.6,
+      "fat_saturated": 1.7,
+      "salt": 0.22,
+      "protein": 20
+    }
+  },
+  {
+    "uuid": "b1251f8c-e745-4887-8a89-06c3babbe78c",
+    "slug": "hamburguesa-lomo-vacuno-paquete",
+    "display_name_lang_es_es": "Hamburguesa de lomo de vacuno",
+    "vendors": [
+      ""
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 16.042,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 240000,
+      "fat_total": 18,
+      "fat_saturated": 8.2,
+      "salt": 1.1,
+      "carbohydrate_total": 0.5,
+      "carbohydrate_sugar": 0.5,
+      "protein": 19
+    }
+  },
+  {
+    "uuid": "66c7f11b-3251-47bb-9c18-d8b2ccf02434",
+    "slug": "burger-cordero-romero-paquete",
+    "display_name_lang_es_es": "Burger de cordero al romero",
+    "vendors": [
+      ""
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 15.417,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 176000,
+      "fat_total": 11.2,
+      "fat_saturated": 5.1,
+      "salt": 0.43,
+      "carbohydrate_total": 0.5,
+      "carbohydrate_sugar": 0.5,
+      "protein": 18.4
+    }
+  },
+  {
+    "uuid": "9b51fcda-e6be-4f2d-bfb8-e9897b1a2958",
+    "slug": "preparado-carne-picada-vacuno-cerdo-bandeja",
+    "display_name_lang_es_es": "Preparado de carne picada vacuno y cerdo",
+    "display_name_lang_en_us": "Minced pork and beef",
+    "vendors": [
+      ""
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 7,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 195000,
+      "fat_total": 12,
+      "fat_saturated": 6,
+      "salt": 0.6,
+      "carbohydrate_total": 2,
+      "carbohydrate_sugar": 0.5,
+      "protein": 17
+    }
+  },
+  {
+    "uuid": "04510c96-f45e-42da-8ee1-1533eb4f07c7",
+    "slug": "preparado-carne-picada-pollo-bandeja",
+    "display_name_lang_es_es": "Preparado de carne picada pollo",
+    "vendors": [
+      ""
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 7.1,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 144000,
+      "fat_total": 7,
+      "fat_saturated": 2,
+      "salt": 0.6,
+      "carbohydrate_total": 3,
+      "carbohydrate_sugar": 0.5,
+      "protein": 17
+    }
+  },
+  {
+    "uuid": "8264dbe0-9772-4eaf-89b7-b8206e845254",
+    "slug": "cereales-copos-maiz-corn-flakes-hacendado-0-azucares-anadidos-caja",
+    "display_name_lang_es_es": "Cereales copos de maíz Corn Flakes Hacendado 0% azúcares añadidos",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 3,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 373000,
+      "fat_total": 1.1,
+      "fat_saturated": 0.4,
+      "salt": 1,
+      "carbohydrate_total": 82,
+      "carbohydrate_sugar": 0.9,
+      "protein": 6.7,
+      "fiber": 4.4
+    }
+  },
+  {
+    "uuid": "602eea9e-82f8-483b-b03f-b1f3b13624db",
+    "slug": "tortitas-maiz-hacendado-paquete",
+    "display_name_lang_es_es": "Tortitas de maíz Hacendado",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 9.167,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 368000,
+      "fat_total": 1.8,
+      "fat_saturated": 0.4,
+      "salt": 0.7,
+      "carbohydrate_total": 80,
+      "carbohydrate_sugar": 1,
+      "protein": 7.5,
+      "fiber": 1
+    }
+  },
+  {
+    "uuid": "8240a48b-fb4f-421a-85e9-a656d0060358",
+    "slug": "tortitas-legumbres-arroz-hacendado-paquete",
+    "display_name_lang_es_es": "Tortitas de legumbres y arroz Hacendado",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 16.056,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 366000,
+      "fat_total": 3.1,
+      "fat_saturated": 0.7,
+      "salt": 1.7,
+      "carbohydrate_total": 55,
+      "carbohydrate_sugar": 2,
+      "protein": 25,
+      "fiber": 7.9
+    }
+  },
+  {
+    "uuid": "b303739b-d797-4cfb-8bcf-bf191ee457a5",
+    "slug": "tortitas-maiz-con-sabor-jamon-hacendado-paquete",
+    "display_name_lang_es_es": "Tortitas de maíz con sabor a jamón Hacendado",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 12.5,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 467000,
+      "fat_total": 10,
+      "fat_saturated": 0.9,
+      "salt": 2.3,
+      "carbohydrate_total": 79,
+      "carbohydrate_sugar": 1.5,
+      "protein": 11,
+      "fiber": 7.7
+    }
+  },
+  {
+    "uuid": "31fb8556-e1ca-4d6c-881b-1bbd431dbc0d",
+    "slug": "pechuga-pavo-92-hacendado-lonchas-paquete",
+    "display_name_lang_es_es": "Pechuga 92% pavo Hacendado lonchas",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 13.25,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 89000,
+      "fat_total": 1.3,
+      "fat_saturated": 0.5,
+      "salt": 1.9,
+      "carbohydrate_total": 1,
+      "carbohydrate_sugar": 1,
+      "protein": 19.5
+    }
+  },
+  {
+    "uuid": "adcfc2c8-e076-4361-93ab-71f37bef8fb5",
+    "slug": "pechuga-pollo-92-hacendado-lonchas-paquete",
+    "display_name_lang_es_es": "Pechuga de pollo 92% Hacendado lonchas",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 13.25,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 89000,
+      "fat_total": 1.7,
+      "fat_saturated": 0.5,
+      "carbohydrate_total": 1,
+      "carbohydrate_sugar": 1,
+      "protein": 1.9,
+      "fiber": 18.1
+    }
+  },
+  {
+    "uuid": "5568c9a1-f468-442a-976f-42f2c5c62016",
+    "slug": "queso-lonchas-cremoso-light-havarti-vaca-hacendado-paquete",
+    "display_name_lang_es_es": "Queso lonchas cremoso light havarti de vaca Hacendado",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 9.367,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 267000,
+      "fat_total": 17,
+      "fat_saturated": 12,
+      "salt": 1.6,
+      "carbohydrate_total": 1.6,
+      "carbohydrate_sugar": 0.5,
+      "protein": 27,
+      "calcium": 0.822
+    }
+  },
+  {
+    "uuid": "a38200f7-4a0a-4cc9-aee5-14005cf544e7",
+    "slug": "queso-provolone-vaca-hacendado-paquete",
+    "display_name_lang_es_es": "Queso provolone de vaca Hacendado",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 12.25,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 365000,
+      "fat_total": 29,
+      "fat_saturated": 20,
+      "salt": 1.8,
+      "carbohydrate_total": 2,
+      "carbohydrate_sugar": 2,
+      "protein": 24
+    }
+  },
+  {
+    "uuid": "f777fee0-b6c6-4f11-97a7-bc9a0ef44e44",
+    "slug": "queso-rallado-mozzarella-pizza-roma-vaca-hacendado-paquete",
+    "display_name_lang_es_es": "Queso rallado mozzarella pizza-Roma de vaca Hacendado",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 7.95,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 283000,
+      "fat_total": 21,
+      "fat_saturated": 13,
+      "salt": 1,
+      "carbohydrate_total": 2.5,
+      "carbohydrate_sugar": 0.8,
+      "protein": 21
+    }
+  },
+  {
+    "uuid": "bb3d3d67-743d-4943-9fbe-a67b8cceb742",
+    "slug": "queso-polvo-especial-pasta-mezcla-hacendado-paquete",
+    "display_name_lang_es_es": "Queso en polvo especial pasta mezcla Hacendado",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 8.734,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 292000,
+      "fat_total": 16,
+      "fat_saturated": 12,
+      "salt": 2.5,
+      "carbohydrate_total": 17,
+      "carbohydrate_sugar": 2.4,
+      "protein": 20
+    }
+  },
+  {
+    "uuid": "1a6a0d03-4016-4e43-be68-7e77d2a15f03",
+    "slug": "queso-polvo-grana-padano-hacendado-paquete",
+    "display_name_lang_es_es": "Queso en polvo grana padano Hacendado",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 17.1,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 398000,
+      "fat_total": 29,
+      "fat_saturated": 18,
+      "salt": 1.5,
+      "protein": 33
+    }
+  },
+  {
+    "uuid": "d45e265a-3ed9-4ce1-8340-a6399052f6e5",
+    "slug": "queso-rallado-especial-fundir-mezcla-hacendado-paquete",
+    "display_name_lang_es_es": "Queso rallado especial fundir mezcla Hacendado",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 6.4,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 284000,
+      "fat_total": 20,
+      "fat_saturated": 13,
+      "salt": 1.5,
+      "carbohydrate_total": 7,
+      "carbohydrate_sugar": 0.5,
+      "protein": 19
+    }
+  },
+  {
+    "uuid": "b4675336-fcab-4364-9b10-c7c8430c79a0",
+    "slug": "queso-fresco-cottage-semidesnatado-vaca-hacendado-tarrina",
+    "display_name_lang_es_es": "Queso fresco cottage semidesnatado de vaca Hacendado",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 6.1,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 99000,
+      "fat_total": 4,
+      "fat_saturated": 2.6,
+      "salt": 0.82,
+      "carbohydrate_total": 1.7,
+      "carbohydrate_sugar": 1.7,
+      "protein": 14
+    }
+  },
+  {
+    "uuid": "f4a9a6ae-3f04-42be-ad68-e72882863189",
+    "slug": "mix-frutos-rojos-hacendado-ultracongeladas-paquete",
+    "display_name_lang_es_es": "Mix de frutos rojos Hacendado ultracongeladas",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 5.434,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 39000,
+      "carbohydrate_total": 5.5,
+      "carbohydrate_sugar": 5.2,
+      "protein": 0.9
+    }
+  },
+  {
+    "uuid": "b99126bf-d030-48a8-bca8-25220b75a575",
+    "slug": "guisante-fino-hacendado-ultracongelado-paquete",
+    "display_name_lang_es_es": "Guisante fino Hacendado ultracongelado",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 1.58,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 82000,
+      "fat_total": 0.4,
+      "fat_saturated": 0.2,
+      "salt": 0.01,
+      "carbohydrate_total": 11,
+      "carbohydrate_sugar": 2.8,
+      "protein": 6,
+      "fiber": 5
+    }
+  },
+  {
+    "uuid": "4881b3b1-cd3a-492b-af0e-352062fc0266",
+    "slug": "judia-verde-plana-hacendado-ultracongelada-paquete",
+    "display_name_lang_es_es": "Judía verde plana Hacendado ultracongelada",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 1.53,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 31000,
+      "fat_total": 0.2,
+      "salt": 0.01,
+      "carbohydrate_total": 4.2,
+      "carbohydrate_sugar": 3,
+      "protein": 1.9,
+      "fiber": 2.4
+    }
+  },
+  {
+    "uuid": "f2025342-685a-4be2-9a40-4d7b68ee6508",
+    "slug": "cebolla-troceada-hacendado-ultracongelada-paquete",
+    "display_name_lang_es_es": "Cebolla troceada Hacendado ultracongelada",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 2.267,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 41000,
+      "fat_total": 0.1,
+      "salt": 0.01,
+      "carbohydrate_total": 7.9,
+      "carbohydrate_sugar": 5.6,
+      "protein": 1.2,
+      "fiber": 1.8
+    }
+  },
+  {
+    "uuid": "503ed32a-7c09-4769-b646-0d59f11c5ab4",
+    "slug": "espinaca-picada-porciones-hacendado-ultracongelada-paquete",
+    "display_name_lang_es_es": "Espinaca picada en porciones Hacendado ultracongelada",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 2.56,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 27000,
+      "fat_total": 0.4,
+      "fat_saturated": 0.1,
+      "salt": 0.16,
+      "carbohydrate_total": 1.6,
+      "carbohydrate_sugar": 1.5,
+      "protein": 2.9,
+      "fiber": 2.7
+    }
+  },
+  {
+    "uuid": "b4ddc43e-4aeb-4d1a-9144-37e7d2e51493",
+    "slug": "pimiento-rojo-verde-hacendado-ultracongelado-paquete",
+    "display_name_lang_es_es": "Pimiento rojo y verde Hacendado ultracongelado",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 2.845,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 28000,
+      "fat_total": 0.4,
+      "fat_saturated": 0.1,
+      "salt": 0.01,
+      "carbohydrate_total": 4.5,
+      "carbohydrate_sugar": 4.3,
+      "protein": 0.9,
+      "fiber": 1.6
+    }
+  },
+  {
+    "uuid": "4bc2f33d-3708-49f3-bb6f-e55a4b3c0746",
+    "slug": "salteado-verduras-asadas-hacendado-ultracongeladas-paquete",
+    "display_name_lang_es_es": "Salteado de verduras asadas Hacendado ultracongeladas",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 4.25,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 45000,
+      "fat_total": 0.1,
+      "salt": 0.03,
+      "carbohydrate_total": 7.9,
+      "carbohydrate_sugar": 6.6,
+      "protein": 1.8,
+      "fiber": 2.9
+    }
+  },
+  {
+    "uuid": "4f5b823c-1c13-42bc-9ccb-7035ced3c4a5",
+    "slug": "ajo-troceado-hacendado-ultracongelado-paquete",
+    "display_name_lang_es_es": "Ajo troceado Hacendado ultracongelado",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 6.8,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 146000,
+      "fat_total": 3.2,
+      "fat_saturated": 0.4,
+      "salt": 0.05,
+      "carbohydrate_total": 24,
+      "carbohydrate_sugar": 2.3,
+      "protein": 5.1,
+      "fiber": 1.2
+    }
+  },
+  {
+    "uuid": "1d8cbd24-64eb-4572-8865-db1659cee599",
+    "slug": "pisto-verduras-hacendado-ultracongelado-paquete",
+    "display_name_lang_es_es": "Pisto de verduras Hacendado ultracongelado",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 5.112,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 64000,
+      "fat_total": 2.6,
+      "fat_saturated": 0.3,
+      "salt": 0.44,
+      "carbohydrate_total": 7.3,
+      "carbohydrate_sugar": 5.6,
+      "protein": 1.6,
+      "fiber": 2.3
+    }
+  },
+  {
+    "uuid": "b9b6d5dc-454f-4146-8fb6-7a4c03d73470",
+    "slug": "atun-claro-natural-hacendado",
+    "display_name_lang_es_es": "Atún claro al natural Hacendado",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 11.667,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 79000,
+      "fat_total": 0.6,
+      "fat_saturated": 0.2,
+      "salt": 1.1,
+      "carbohydrate_total": 0.5,
+      "carbohydrate_sugar": 0.5,
+      "protein": 18
+    }
+  },
+  {
+    "uuid": "eedd360b-68ba-4819-873e-d987b06309bb",
+    "slug": "maiz-dulce-hacendado-pack-3",
+    "display_name_lang_es_es": "Maíz dulce Hacendado",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 5.953,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 82000,
+      "fat_total": 1.4,
+      "fat_saturated": 0.4,
+      "salt": 0.5,
+      "carbohydrate_total": 14,
+      "carbohydrate_sugar": 6.7,
+      "protein": 2.5
+    }
+  },
+  {
+    "uuid": "6d4044ee-719a-4dc8-816d-61a091ecc01a",
+    "slug": "pimientos-asados-tiras-hacendado-bandeja",
+    "display_name_lang_es_es": "Pimientos asados en tiras Hacendado",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 8.276,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 30000,
+      "fat_total": 0.5,
+      "salt": 0.83,
+      "carbohydrate_total": 5.6,
+      "carbohydrate_sugar": 5.2,
+      "protein": 0.9
+    }
+  },
+  {
+    "uuid": "f29d25a9-591d-4c43-a364-fb4d3c2add2c",
+    "slug": "caldo-pollo-casero-gallina-blanca-brick",
+    "display_name_lang_es_es": "Caldo de pollo casero Gallina Blanca",
+    "vendors": [
+      "Gallina Blanca"
+    ],
+    "unit": "l",
+    "price": {
+      "uuid": "",
+      "price": 1.85,
+      "quantity": 1
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 5000,
+      "fat_total": 0.3,
+      "salt": 0.75,
+      "carbohydrate_total": 0.2,
+      "carbohydrate_sugar": 0.1,
+      "protein": 0.4
+    }
+  },
+  {
+    "uuid": "b82a7878-7987-4110-ba1e-6cda120f1ec3",
+    "slug": "caldo-verduras-hacendado-brick",
+    "display_name_lang_es_es": "Caldo de verduras Hacendado",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "l",
+    "price": {
+      "uuid": "",
+      "price": 1,
+      "quantity": 1
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 5000,
+      "fat_total": 0.6,
+      "fat_saturated": 0.2,
+      "salt": 0.7,
+      "carbohydrate_total": 0.5,
+      "carbohydrate_sugar": 0.5,
+      "protein": 0.5,
+      "fiber": 0.5
+    }
+  },
+  {
+    "uuid": "6c0c6e7f-db8a-43e6-b135-a59cc772e22c",
+    "slug": "caldo-paella-carne-hacendado-con-sofrito-brick",
+    "display_name_lang_es_es": "Caldo para paella de carne Hacendado con sofrito",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "l",
+    "price": {
+      "uuid": "",
+      "price": 2.25,
+      "quantity": 1
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 46000,
+      "fat_total": 4.1,
+      "fat_saturated": 0.8,
+      "salt": 0.9,
+      "carbohydrate_total": 1.1,
+      "carbohydrate_sugar": 0.5,
+      "protein": 1.2,
+      "fiber": 0.5
+    }
+  },
+  {
+    "uuid": "74d06c96-1e15-4d6b-b2a6-c2e2d5efc8dc",
+    "slug": "fumet-caldo-pescado-hacendado-botella",
+    "display_name_lang_es_es": "Fumet caldo de pescado Hacendado",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 3.158,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 26000,
+      "fat_total": 1.9,
+      "fat_saturated": 0.3,
+      "salt": 1.1,
+      "carbohydrate_total": 1.3,
+      "carbohydrate_sugar": 1.2,
+      "protein": 0.9
+    }
+  },
+  {
+    "uuid": "d907416e-45c4-4462-a870-f058506eece8",
+    "slug": "tomate-triturado-hacendado-freir-bote",
+    "display_name_lang_es_es": "Tomate triturado Hacendado",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 1.625,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 28000,
+      "fat_total": 0.1,
+      "salt": 0.5,
+      "carbohydrate_total": 5.5,
+      "carbohydrate_sugar": 4.4,
+      "protein": 0.8
+    }
+  },
+  {
+    "uuid": "d62359a0-373b-49aa-ae57-8b847775151f",
+    "slug": "fritada-pisto-hacendado-brick",
+    "display_name_lang_es_es": "Fritada pisto Hacendado",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 3.422,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 92000,
+      "fat_total": 4.8,
+      "fat_saturated": 0.6,
+      "salt": 0.5,
+      "carbohydrate_total": 10,
+      "carbohydrate_sugar": 8,
+      "protein": 1.2
+    }
+  },
+  {
+    "uuid": "a6a375cb-7429-4a75-bcee-097518db4039",
+    "slug": "ensalada-mezcla-brotes-tiernos-compuesta-brotes-batavia-roja-verde-lollo-rojo-rucula-espinaca-baby-paquete",
+    "display_name_lang_es_es": "Ensalada mezcla brotes tiernos",
+    "vendors": [
+      ""
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 11.7,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 24000,
+      "fat_total": 0.3,
+      "salt": 0.1,
+      "carbohydrate_total": 2.8,
+      "carbohydrate_sugar": 0.7,
+      "protein": 1.8,
+      "fiber": 1.3
+    }
+  },
+  {
+    "uuid": "5be17dde-afab-442f-821a-992bf713627b",
+    "slug": "patatas-malla",
+    "display_name_lang_es_es": "Patatas",
+    "vendors": [
+      ""
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 1.25,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 68000,
+      "salt": 0.01,
+      "carbohydrate_total": 14.5,
+      "carbohydrate_sugar": 2.1,
+      "protein": 1.9,
+      "fiber": 1.4
+    }
+  },
+  {
+    "uuid": "9e0f34b0-1f3d-4e94-87b2-1ed754a0f109",
+    "slug": "cebollas-malla",
+    "display_name_lang_es_es": "Cebollas",
+    "vendors": [
+      ""
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 1.6,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 43000,
+      "fat_total": 0.08,
+      "fat_saturated": 0.02,
+      "carbohydrate_total": 10.11,
+      "carbohydrate_sugar": 4.2,
+      "protein": 0.92,
+      "fiber": 1.4
+    }
+  },
+  {
+    "uuid": "987c5bc3-9174-4bd5-ac11-2584483e6299",
+    "slug": "cebollas-dulces-sabor-suave-malla",
+    "display_name_lang_es_es": "Cebollas dulces",
+    "vendors": [
+      ""
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 2.49,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 32000,
+      "fat_total": 0.08,
+      "carbohydrate_total": 7.5,
+      "carbohydrate_sugar": 5,
+      "protein": 0.8,
+      "fiber": 0.9
+    }
+  },
+  {
+    "uuid": "9586c89a-07e9-4b34-b5eb-d11664d09b7f",
+    "slug": "cebollas-rojas-malla",
+    "display_name_lang_es_es": "Cebollas rojas",
+    "vendors": [
+      ""
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 2.8,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 42000,
+      "fat_total": 0.08,
+      "fat_saturated": 0.02,
+      "carbohydrate_total": 10.11,
+      "carbohydrate_sugar": 4.2,
+      "protein": 0.92,
+      "fiber": 1.4
+    }
+  },
+  {
+    "uuid": "072e4b4d-9424-4b89-b505-18063f4c308f",
+    "slug": "tomate-canario-pieza",
+    "display_name_lang_es_es": "Tomate canario",
+    "vendors": [
+      ""
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 1.84,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 22000,
+      "fat_total": 0.25,
+      "carbohydrate_total": 4.82,
+      "carbohydrate_sugar": 3.2,
+      "protein": 1.08,
+      "fiber": 1.5
+    }
+  },
+  {
+    "uuid": "f91bf4ca-d013-448e-9d4a-df28028c5f35",
+    "slug": "tomate-rallado-tarrina",
+    "display_name_lang_es_es": "Tomate rallado",
+    "vendors": [
+      ""
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 4.897,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 21000,
+      "fat_total": 0.2,
+      "fat_saturated": 0.03,
+      "carbohydrate_total": 3.3,
+      "carbohydrate_sugar": 2.6,
+      "protein": 0.8,
+      "fiber": 1.3
+    }
+  },
+  {
+    "uuid": "97e940f4-7ca0-4649-9c8b-f753b8484b94",
+    "slug": "zanahorias-paquete",
+    "display_name_lang_es_es": "Zanahorias",
+    "vendors": [
+      ""
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 1.74,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 41000,
+      "fat_total": 0.24,
+      "fat_saturated": 0.01,
+      "carbohydrate_total": 9.58,
+      "carbohydrate_sugar": 4.5,
+      "protein": 0.93,
+      "fiber": 2.8
+    }
+  },
+  {
+    "uuid": "a3d38478-7df0-4c27-baa2-6f4f05cdb2f5",
+    "slug": "pimiento-rojo-pieza",
+    "display_name_lang_es_es": "Pimiento rojo",
+    "vendors": [
+      ""
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 1.95,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 26000,
+      "fat_total": 0.3,
+      "carbohydrate_total": 6,
+      "carbohydrate_sugar": 4.2,
+      "protein": 1,
+      "fiber": 2
+    }
+  },
+  {
+    "uuid": "9b670779-731b-44d5-9a60-981d25d3f330",
+    "slug": "calabacin-verde-pieza",
+    "display_name_lang_es_es": "Calabacín verde",
+    "vendors": [
+      ""
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 1.95,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 16000,
+      "fat_total": 0.18,
+      "carbohydrate_total": 3.35,
+      "carbohydrate_sugar": 1.73,
+      "protein": 1.21,
+      "fiber": 1.1
+    }
+  },
+  {
+    "uuid": "2e1b4bf0-b8c0-4593-aaac-0cac1452eec5",
+    "slug": "pimiento-verde-pieza",
+    "display_name_lang_es_es": "Pimiento verde",
+    "vendors": [
+      ""
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 2.74,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 20000,
+      "fat_total": 0.17,
+      "carbohydrate_total": 4.64,
+      "carbohydrate_sugar": 2.4,
+      "protein": 0.86,
+      "fiber": 1.7
+    }
+  },
+  {
+    "uuid": "98f7897e-5b32-415f-856c-821053f92934",
+    "slug": "champinon-laminado-limpio-bandeja",
+    "display_name_lang_es_es": "Champiñón laminado limpio",
+    "vendors": [
+      ""
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 6.07,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 20000,
+      "fat_total": 0.41,
+      "fat_saturated": 0.09,
+      "salt": 0.06,
+      "carbohydrate_total": 3,
+      "carbohydrate_sugar": 0.5,
+      "protein": 3.34,
+      "fiber": 1.43
+    }
+  },
+  {
+    "uuid": "996d72d8-c405-4aa6-b2ca-318b64cdd05e",
+    "slug": "berenjena-pieza",
+    "display_name_lang_es_es": "Berenjena",
+    "vendors": [
+      ""
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 1.9,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 24000,
+      "fat_total": 0.19,
+      "fat_saturated": 0.01,
+      "carbohydrate_total": 5.7,
+      "carbohydrate_sugar": 2.35,
+      "protein": 1.01,
+      "fiber": 3.4
+    }
+  },
+  {
+    "uuid": "2e38248e-2df3-461b-a684-9729bac0422f",
+    "slug": "apio-verde-paquete",
+    "display_name_lang_es_es": "Apio verde",
+    "vendors": [
+      ""
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 1.95,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 6000,
+      "fat_total": 0.07,
+      "fat_saturated": 0.01,
+      "carbohydrate_total": 1.19,
+      "carbohydrate_sugar": 0.73,
+      "protein": 0.28,
+      "fiber": 0.6
+    }
+  },
+  {
+    "uuid": "66ae15e6-2c04-4b7b-9b33-6c3a8fab27b5",
+    "slug": "patata-microondas-paquete",
+    "display_name_lang_es_es": "Patata para microondas",
+    "vendors": [
+      ""
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 3.7,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 79000,
+      "fat_total": 0.1,
+      "fat_saturated": 0.025,
+      "salt": 0.015,
+      "carbohydrate_total": 15.7,
+      "carbohydrate_sugar": 1.15,
+      "protein": 1.7,
+      "fiber": 2.4
+    }
+  },
+  {
+    "uuid": "51022dd9-a051-4c38-a8ed-e3a9682abecd",
+    "slug": "preparado-verduras-sofreir-compuesto-calabacin-pimiento-cebolla-paquete",
+    "display_name_lang_es_es": "Preparado de verduras para sofreír",
+    "vendors": [
+      ""
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 5.6,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 30000,
+      "fat_total": 0.2,
+      "fat_saturated": 0.1,
+      "salt": 0.01,
+      "carbohydrate_total": 5.2,
+      "carbohydrate_sugar": 3.1,
+      "protein": 1.1,
+      "fiber": 1.4
+    }
+  },
+  {
+    "uuid": "d5a60711-22dd-4066-9330-f95795372bba",
+    "slug": "pasta-fresca-gnocchi-hacendado-paquete",
+    "display_name_lang_es_es": "Pasta fresca gnocchi Hacendado",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 2.04,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 174000,
+      "fat_total": 0.4,
+      "fat_saturated": 0.2,
+      "salt": 0.87,
+      "carbohydrate_total": 37.6,
+      "carbohydrate_sugar": 0.2,
+      "protein": 4.5
+    }
+  },
+  {
+    "uuid": "794ab826-3001-467c-ae68-9af8ae8f5e68",
+    "slug": "tomates-cherry-bandeja",
+    "display_name_lang_es_es": "Tomates cherry",
+    "vendors": [
+      ""
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 3.88,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 20000,
+      "fat_total": 0.5,
+      "fat_saturated": 2,
+      "carbohydrate_total": 2,
+      "carbohydrate_sugar": 2,
+      "protein": 2,
+      "fiber": 2
+    }
+  },
+  {
+    "uuid": "1df78e81-f1cd-4011-a900-f2f8e3627b10",
+    "slug": "taquitos-salmon-ahumado-hacendado-paquete",
+    "display_name_lang_es_es": "Taquitos de salmón ahumado Hacendado",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 38,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 182000,
+      "fat_total": 10,
+      "fat_saturated": 1.5,
+      "salt": 2.8,
+      "carbohydrate_total": 0.5,
+      "carbohydrate_sugar": 0.5,
+      "protein": 22
+    }
+  },
+  {
+    "uuid": "dbb5d0b1-1adc-42fa-b1dd-627f0aced0df",
+    "slug": "aceite-oliva-virgen-extra-hacendado-botella",
+    "display_name_lang_es_es": "Aceite de oliva virgen extra Hacendado",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "l",
+    "price": {
+      "uuid": "",
+      "price": 6.75,
+      "quantity": 1
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 822000,
+      "fat_total": 91,
+      "fat_saturated": 13,
+      "fat_monounsaturated": 72,
+      "fat_polyunsaturated": 6
+    }
+  },
+  {
+    "uuid": "804ede53-b259-4a3e-b304-82008b8eb66d",
+    "slug": "molletes-san-roque-antequera-paquete",
+    "display_name_lang_es_es": "Molletes San Roque de Antequera",
+    "vendors": [
+      "San Roque"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 4.9,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 235000,
+      "fat_total": 1.1,
+      "fat_saturated": 0.2,
+      "fat_monounsaturated": 0.3,
+      "fat_polyunsaturated": 0.6,
+      "salt": 1.29,
+      "carbohydrate_total": 46.5,
+      "carbohydrate_sugar": 1.3,
+      "protein": 8.5,
+      "fiber": 2.5
+    }
+  },
+  {
+    "uuid": "8f4cb377-d3e8-4a63-af51-b746d21c1769",
+    "slug": "ketchup-zero-azucares-anadidos-hacendado-bote",
+    "display_name_lang_es_es": "Salsa de tomate Zero sin azúcares añadidos Hacendado",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 2.667,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 83000,
+      "salt": 1.7,
+      "carbohydrate_total": 17.8,
+      "carbohydrate_sugar": 5.6,
+      "protein": 1.7,
+      "fiber": 1.7
+    }
+  },
+  {
+    "uuid": "79016ff7-0d96-4840-b725-ae0c4769da1b",
+    "slug": "ketchup-hacendado-bote",
+    "display_name_lang_es_es": "Ketchup Hacendado",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 1.917,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 115000,
+      "salt": 1.8,
+      "carbohydrate_total": 27,
+      "carbohydrate_sugar": 20.5,
+      "protein": 1.3
+    }
+  },
+  {
+    "uuid": "34286116-50fc-42b7-9e91-9993ff280796",
+    "slug": "tortillas-trigo-integrales-hacendado-paquete",
+    "display_name_lang_es_es": "Tortillas de trigo integrales Hacendado",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 4.584,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 272000,
+      "fat_total": 6,
+      "fat_saturated": 1.5,
+      "salt": 1.3,
+      "carbohydrate_total": 41,
+      "carbohydrate_sugar": 1.9,
+      "protein": 9.2,
+      "fiber": 8.5
+    }
+  },
+  {
+    "uuid": "9c1d2bfd-61ad-4c4f-96f5-17aece7dcf56",
+    "slug": "noodles-de-trigo-especiales-para-ramen-de-costillas-de-cerdo",
+    "display_name_lang_es_es": "Noodles de trigo especiales para ramen de costillas de cerdo",
+    "display_name_lang_en_us": "Pork steak ramen noodles",
+    "vendors": [
+      "Mai Aunt"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 5.9,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 350000,
+      "fat_total": 0.8,
+      "salt": 1.74,
+      "carbohydrate_total": 76.7,
+      "protein": 9.3
+    }
+  },
+  {
+    "uuid": "f62ab1d1-dd48-40ad-87e7-a23d68002c24",
+    "slug": "floretas-brocoli-microondas-paquete",
+    "display_name_lang_es_es": "Floretas de brócoli para microondas",
+    "vendors": [
+      ""
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 6.74,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 46000,
+      "fat_total": 0.4,
+      "fat_saturated": 0.04,
+      "salt": 0.08,
+      "carbohydrate_total": 6.6,
+      "carbohydrate_sugar": 1.7,
+      "protein": 2.8,
+      "fiber": 2.6
+    }
+  },
+  {
+    "uuid": "3914c0c8-7e9b-4e05-b02a-8a4f7aeb95b4",
+    "slug": "tiras-poton-pacifico-bandeja",
+    "display_name_lang_es_es": "Tiras de potón del Pacífico",
+    "vendors": [
+      ""
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 12,
+      "quantity": 1
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 53000,
+      "fat_total": 0.6,
+      "fat_saturated": 0.2,
+      "salt": 1.2,
+      "protein": 12
+    }
+  },
+  {
+    "uuid": "116efb57-39b4-4ca0-85d5-a0f6aa7a3b25",
+    "slug": "canonigos-paquete",
+    "display_name_lang_es_es": "Canónigos",
+    "vendors": [
+      ""
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 9.28,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 21000,
+      "fat_total": 0.5,
+      "fat_saturated": 0.1,
+      "salt": 0.08,
+      "carbohydrate_total": 1.6,
+      "carbohydrate_sugar": 1.6,
+      "protein": 1.8,
+      "fiber": 1.3
+    }
+  },
+  {
+    "uuid": "fcdd73eb-d9af-462a-99fc-0d7a6b93db40",
+    "slug": "arroz-basmati-aromatico-hacendado-paquete",
+    "display_name_lang_es_es": "Arroz basmati aromático Hacendado",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 2.3,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 355000,
+      "fat_total": 0.6,
+      "fat_saturated": 0.2,
+      "salt": 0.01,
+      "carbohydrate_total": 78,
+      "carbohydrate_sugar": 0.5,
+      "protein": 9
+    }
+  },
+  {
+    "uuid": "56b3fdf6-55b5-4ce2-a256-aaf4fb8796ad",
+    "slug": "arroz-redondo-sos-paquete",
+    "display_name_lang_es_es": "Arroz redondo SOS",
+    "vendors": [
+      "SOS"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 1.84,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 347000,
+      "fat_total": 1.1,
+      "fat_saturated": 0.3,
+      "carbohydrate_total": 77,
+      "protein": 6.7,
+      "fiber": 0.9
+    }
+  },
+  {
+    "uuid": "d12fd646-6823-4814-bc68-5043ec2cc8bd",
+    "slug": "pasta-misso-aka",
+    "display_name_lang_es_es": "Pasta Misso Aka",
+    "display_name_lang_en_us": "Misso Aka Paste",
+    "vendors": [
+      "Sakura"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 11.5,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 176000,
+      "fat_total": 8,
+      "fat_saturated": 1.6,
+      "salt": 11.8,
+      "carbohydrate_total": 13,
+      "carbohydrate_sugar": 7.4,
+      "protein": 13
+    }
+  },
+  {
+    "uuid": "7884188b-0c5e-4afa-a52e-d06f2cc2b866",
+    "slug": "salsa-de-soja-(baja-en-sal)",
+    "display_name_lang_es_es": "Salsa de soja (baja en sal)",
+    "display_name_lang_en_us": "Soy sauce (low-salt)",
+    "vendors": [
+      "Kikkoman"
+    ],
+    "unit": "l",
+    "price": {
+      "uuid": "",
+      "price": 19.52,
+      "quantity": 1
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 89000,
+      "salt": 9.2,
+      "carbohydrate_total": 6.4,
+      "carbohydrate_sugar": 3.8,
+      "protein": 9.7
+    }
+  },
+  {
+    "uuid": "f91d0e4b-24a5-484c-8be8-3649382ca23f",
+    "slug": "mirin",
+    "display_name_lang_es_es": "Mirin",
+    "display_name_lang_en_us": "Mirin",
+    "vendors": [
+      "Miyata"
+    ],
+    "unit": "l",
+    "price": {
+      "uuid": "",
+      "price": 15.13,
+      "quantity": 1
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 295000,
+      "fat_total": 0.5,
+      "fat_saturated": 0.1,
+      "salt": 0.01,
+      "carbohydrate_total": 74,
+      "carbohydrate_sugar": 53,
+      "protein": 0.5
+    }
+  },
+  {
+    "uuid": "bf5ec824-b885-47f6-9765-69e79ea2f265",
+    "slug": "salsa-teriyaki",
+    "display_name_lang_es_es": "Salsa Teriyaki",
+    "display_name_lang_en_us": "Teriyaki Sauce",
+    "vendors": [
+      "Sushi King"
+    ],
+    "unit": "l",
+    "price": {
+      "uuid": "",
+      "price": 11,
+      "quantity": 1
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 157000,
+      "fat_total": 0.6,
+      "salt": 8.15,
+      "carbohydrate_total": 35.2,
+      "carbohydrate_sugar": 35.2,
+      "protein": 2.7
+    }
+  },
+  {
+    "uuid": "c8d2b84b-7b40-4de6-b1fb-9365b46ffb13",
+    "slug": "pieza-magro-cabeza-cerdo-pieza",
+    "display_name_lang_es_es": "Pieza cabeza lomo de cerdo",
+    "vendors": [
+      ""
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 5.39,
+      "quantity": 1
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 168000,
+      "fat_total": 10,
+      "fat_saturated": 3.9,
+      "salt": 0.13,
+      "protein": 19
+    }
+  },
+  {
+    "uuid": "d805671a-1ebe-4ae4-b441-469f2e66a42c",
+    "slug": "huevos-de-gallinas-camperas",
+    "display_name_lang_es_es": "Huevos de gallinas camperas",
+    "display_name_lang_en_us": "Free-range eggs",
+    "vendors": [
+      ""
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 3.24,
+      "quantity": 70
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 150000,
+      "fat_total": 11.1,
+      "fat_saturated": 3.1,
+      "salt": 0.36,
+      "carbohydrate_total": 0.5,
+      "carbohydrate_sugar": 0.5,
+      "protein": 12.5
+    }
+  },
+  {
+    "uuid": "f378d09d-8e7c-4d44-b4d1-fc7e68273c8f",
+    "slug": "setas",
+    "display_name_lang_es_es": "Setas",
+    "display_name_lang_en_us": "Mushrooms",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 14.99,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 16000,
+      "fat_total": 0.3,
+      "fat_saturated": 0.1,
+      "carbohydrate_total": 0.5,
+      "carbohydrate_sugar": 0.4,
+      "protein": 1.8,
+      "fiber": 1.9
+    }
+  },
+  {
+    "uuid": "2f0a0cf9-4a85-4eda-82f2-0b0ef955169a",
+    "slug": "filete-lubina-bandeja",
+    "display_name_lang_es_es": "Filete de lubina",
+    "vendors": [
+      ""
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 21.95,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 97000,
+      "fat_total": 2,
+      "fat_saturated": 0.511,
+      "fat_monounsaturated": 0.424,
+      "fat_polyunsaturated": 0.743,
+      "salt": 0.17,
+      "protein": 18.43
+    }
+  },
+  {
+    "uuid": "cfd6d34f-f79d-4ba7-995f-59b9ccc2f726",
+    "slug": "leche-semidesnatada-hacendado-pack-6",
+    "display_name_lang_es_es": "Leche semidesnatada Hacendado",
+    "vendors": [
+      "Hacendado"
+    ],
+    "unit": "l",
+    "price": {
+      "uuid": "",
+      "price": 0.83,
+      "quantity": 1
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 46000,
+      "fat_total": 1.6,
+      "fat_saturated": 1.1,
+      "salt": 0.13,
+      "carbohydrate_total": 4.8,
+      "carbohydrate_sugar": 4.8,
+      "protein": 3.1,
+      "calcium": 0.11
+    }
+  },
+  {
+    "uuid": "cfc24be0-b2b7-466c-943a-3c545dba5368",
+    "slug": "preparado-carne-picada-vacuno-paquete",
+    "display_name_lang_es_es": "Preparado de carne picada vacuno",
+    "vendors": [
+      ""
+    ],
+    "unit": "g",
+    "price": {
+      "uuid": "",
+      "price": 11.875,
+      "quantity": 1000
+    },
+    "nutrition_facts": {
+      "uuid": "",
+      "cal": 204000,
+      "fat_total": 14,
+      "fat_saturated": 6.6,
+      "salt": 0.4,
+      "carbohydrate_total": 0.5,
+      "carbohydrate_sugar": 0.5,
+      "protein": 19
+    }
+  }
+]

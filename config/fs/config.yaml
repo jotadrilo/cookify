@@ -1,0 +1,7 @@
+server:
+  address: localhost:8080
+  gin:
+    mode: debug
+database:
+  fs:
+    root: data/fs
