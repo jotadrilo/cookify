@@ -1,0 +1,497 @@
+[
+  {
+    "uuid": "5b4a64c6-0541-4446-a158-e8c422d87c63",
+    "user_uuid": "f0a443f6-0906-47ea-9c62-4c1fbec31942",
+    "name": "Desayuno - Cafe con mollete de pavo, tomate y aceite",
+    "label": "BREAKFAST",
+    "recipes": [
+      {
+        "uuid": "1deeb779-c05f-4cf2-89ab-1db57ac1ecab",
+        "user_uuid": "f0a443f6-0906-47ea-9c62-4c1fbec31942",
+        "name": "mollete with turkey breat sausage, tomato and oil",
+        "ingredients": [
+          {
+            "product": {
+              "uuid": "594093e3-2943-4f2d-97c4-c6e91f40c8a2",
+              "name": "turkey breast sausage 92%",
+              "lang_es_es": "Embutido de pechuga de pavo 92%",
+              "lang_en_us": "Turkey breast sausage 92%",
+              "vendor": "Mercadona",
+              "unit": "g",
+              "nutrition_facts": {
+                "uuid": "",
+                "cal": 89000,
+                "fat_total": 1.3,
+                "fat_saturated": 0.5,
+                "salt": 1.9,
+                "carbohydrate_total": 0.9,
+                "carbohydrate_sugar": 0.9,
+                "protein": 19.5
+              }
+            },
+            "quantity": 20
+          },
+          {
+            "product": {
+              "uuid": "89891f1c-52b7-467d-aaf9-2aedd5e9bf5b",
+              "name": "mollete bread",
+              "lang_es_es": "Mollete de pan",
+              "lang_en_us": "Mollete bread",
+              "vendor": "Mercadona",
+              "unit": "g",
+              "nutrition_facts": {
+                "uuid": "",
+                "cal": 235000,
+                "fat_total": 1.1,
+                "fat_saturated": 0.2,
+                "fat_monounsaturated": 0.3,
+                "fat_polyunsaturated": 0.6,
+                "salt": 1.29,
+                "carbohydrate_total": 46.5,
+                "carbohydrate_sugar": 1.3,
+                "protein": 8.5,
+                "fiber": 2.5
+              }
+            },
+            "quantity": 100
+          },
+          {
+            "product": {
+              "uuid": "b3927ad5-dacd-4f60-90bf-a00d25f9e808",
+              "name": "tomato",
+              "lang_es_es": "Tomate",
+              "lang_en_us": "Tomato",
+              "vendor": "Generic",
+              "unit": "g",
+              "nutrition_facts": {
+                "uuid": "",
+                "cal": 22000,
+                "fat_total": 0.25,
+                "fat_saturated": 0.057,
+                "fat_monounsaturated": 0.063,
+                "fat_polyunsaturated": 0.166,
+                "sodium": 0.006,
+                "potassium": 0.292,
+                "carbohydrate_total": 4.82,
+                "carbohydrate_sugar": 3.23,
+                "protein": 1.08,
+                "fiber": 1.5
+              }
+            },
+            "quantity": 100
+          },
+          {
+            "product": {
+              "uuid": "0f56e499-0c1f-4101-aa77-481f6fefd07c",
+              "name": "extra virgin olive oil",
+              "lang_es_es": "Aceite de oliva virgen extra",
+              "lang_en_us": "Extra virgin olive oil",
+              "vendor": "Mercadona",
+              "unit": "g",
+              "nutrition_facts": {
+                "uuid": "",
+                "cal": 822000,
+                "fat_total": 91,
+                "fat_saturated": 13,
+                "fat_monounsaturated": 72,
+                "fat_polyunsaturated": 6
+              }
+            },
+            "quantity": 15
+          }
+        ]
+      },
+      {
+        "uuid": "6fa86501-dbb0-4e2b-9a81-b371fad10ec6",
+        "user_uuid": "f0a443f6-0906-47ea-9c62-4c1fbec31942",
+        "name": "cappuccino",
+        "ingredients": [
+          {
+            "product": {
+              "uuid": "2b4e92f1-828a-4c3b-aa7a-a0b4fe9af346",
+              "name": "coffee espresso",
+              "lang_es_es": "Cafe espresso",
+              "lang_en_us": "Espresso Coffee",
+              "vendor": "Generic",
+              "unit": "l",
+              "nutrition_facts": {
+                "uuid": "",
+                "cal": 9000,
+                "fat_total": 0.2,
+                "sodium": 0.014,
+                "potassium": 0.115,
+                "carbohydrate_total": 1.7,
+                "protein": 0.1,
+                "caffeine": 0.212
+              }
+            },
+            "quantity": 0.04
+          },
+          {
+            "product": {
+              "uuid": "a0c11bd5-ff1d-4772-894e-0656ff39b1ad",
+              "name": "semi-skimmed milk",
+              "lang_es_es": "Leche semidesnatada",
+              "lang_en_us": "Semi-skimmed milk",
+              "vendor": "Mercadona",
+              "unit": "l",
+              "nutrition_facts": {
+                "uuid": "",
+                "cal": 46000,
+                "fat_total": 1.6,
+                "fat_saturated": 1.1,
+                "salt": 0.13,
+                "carbohydrate_total": 4.8,
+                "carbohydrate_sugar": 4.8,
+                "protein": 3.1,
+                "calcium": 0.11
+              }
+            },
+            "quantity": 0.3
+          }
+        ]
+      }
+    ],
+    "ingredients": null
+  },
+  {
+    "uuid": "d2be0e0d-d7da-468b-8242-44a437b683e8",
+    "user_uuid": "f0a443f6-0906-47ea-9c62-4c1fbec31942",
+    "name": "Merienda - Cafe con leche",
+    "label": "AFTERNOON_SNACK",
+    "recipes": [
+      {
+        "uuid": "6fa86501-dbb0-4e2b-9a81-b371fad10ec6",
+        "user_uuid": "f0a443f6-0906-47ea-9c62-4c1fbec31942",
+        "name": "cappuccino",
+        "ingredients": [
+          {
+            "product": {
+              "uuid": "2b4e92f1-828a-4c3b-aa7a-a0b4fe9af346",
+              "name": "coffee espresso",
+              "lang_es_es": "Cafe espresso",
+              "lang_en_us": "Espresso Coffee",
+              "vendor": "Generic",
+              "unit": "l",
+              "nutrition_facts": {
+                "uuid": "",
+                "cal": 9000,
+                "fat_total": 0.2,
+                "sodium": 0.014,
+                "potassium": 0.115,
+                "carbohydrate_total": 1.7,
+                "protein": 0.1,
+                "caffeine": 0.212
+              }
+            },
+            "quantity": 0.04
+          },
+          {
+            "product": {
+              "uuid": "a0c11bd5-ff1d-4772-894e-0656ff39b1ad",
+              "name": "semi-skimmed milk",
+              "lang_es_es": "Leche semidesnatada",
+              "lang_en_us": "Semi-skimmed milk",
+              "vendor": "Mercadona",
+              "unit": "l",
+              "nutrition_facts": {
+                "uuid": "",
+                "cal": 46000,
+                "fat_total": 1.6,
+                "fat_saturated": 1.1,
+                "salt": 0.13,
+                "carbohydrate_total": 4.8,
+                "carbohydrate_sugar": 4.8,
+                "protein": 3.1,
+                "calcium": 0.11
+              }
+            },
+            "quantity": 0.3
+          }
+        ]
+      }
+    ],
+    "ingredients": null
+  },
+  {
+    "uuid": "efc97617-9a4f-436d-beaf-8b51fa5728ba",
+    "user_uuid": "f0a443f6-0906-47ea-9c62-4c1fbec31942",
+    "name": "Almuerzo - Noodles con verduras y pollo",
+    "label": "LUNCH",
+    "recipes": [
+      {
+        "uuid": "82236e19-9f80-4dab-a4cc-6cd05c76fa4f",
+        "user_uuid": "f0a443f6-0906-47ea-9c62-4c1fbec31942",
+        "name": "noodles with vegetables and chicken",
+        "ingredients": [
+          {
+            "product": {
+              "uuid": "cec7e75a-7db4-43b5-b0f5-a418c4afbfa7",
+              "name": "boneless skinless chicken thighs",
+              "lang_es_es": "Contramuslo de pollo sin piel deshuesado",
+              "lang_en_us": "Boneless skinless chicken thighs",
+              "vendor": "Mercadona",
+              "unit": "g",
+              "nutrition_facts": {
+                "uuid": "",
+                "cal": 116000,
+                "fat_total": 1.7,
+                "fat_saturated": 0.71,
+                "sodium": 0.11,
+                "carbohydrate_total": 0.4,
+                "carbohydrate_sugar": 0.4,
+                "protein": 0.025
+              }
+            },
+            "quantity": 200
+          },
+          {
+            "product": {
+              "uuid": "ce53d4ea-16b5-4199-b3c4-be2c004f97a3",
+              "name": "pork steak ramen noodles",
+              "lang_es_es": "Noodles de trigo especiales para ramen de costillas de cerdo",
+              "lang_en_us": "Pork steak ramen noodles",
+              "vendor": "Mai Aunt",
+              "unit": "g",
+              "nutrition_facts": {
+                "uuid": "",
+                "cal": 350000,
+                "fat_total": 0.8,
+                "salt": 1.74,
+                "carbohydrate_total": 76.7,
+                "protein": 9.3
+              }
+            },
+            "quantity": 100
+          },
+          {
+            "product": {
+              "uuid": "daa4d567-a999-41d7-879f-e6ce35bb408e",
+              "name": "red pepper",
+              "lang_es_es": "Pimiento rojo",
+              "lang_en_us": "Red pepper",
+              "vendor": "Generic",
+              "unit": "g",
+              "nutrition_facts": {
+                "uuid": "",
+                "cal": 26000,
+                "fat_total": 0.3,
+                "fat_saturated": 0.059,
+                "fat_monounsaturated": 0.007,
+                "fat_polyunsaturated": 0.156,
+                "sodium": 0.002,
+                "potassium": 0.211,
+                "carbohydrate_total": 6.03,
+                "carbohydrate_sugar": 4.2,
+                "protein": 0.99,
+                "fiber": 2
+              }
+            },
+            "quantity": 50
+          },
+          {
+            "product": {
+              "uuid": "ff7d1937-b88e-4ab9-b8db-bd1362b6ec4d",
+              "name": "green pepper",
+              "lang_es_es": "Pimiento verde",
+              "lang_en_us": "Green pepper",
+              "vendor": "Generic",
+              "unit": "g",
+              "nutrition_facts": {
+                "uuid": "",
+                "cal": 20000,
+                "fat_total": 0.17,
+                "fat_saturated": 0.058,
+                "fat_monounsaturated": 0.008,
+                "fat_polyunsaturated": 0.062,
+                "sodium": 0.003,
+                "potassium": 0.175,
+                "carbohydrate_total": 4.64,
+                "carbohydrate_sugar": 2.4,
+                "protein": 0.86,
+                "fiber": 1.7
+              }
+            },
+            "quantity": 50
+          },
+          {
+            "product": {
+              "uuid": "9604c439-7c0d-4be4-8188-d003da2c7e69",
+              "name": "sweet onion",
+              "lang_es_es": "Cebolla dulce",
+              "lang_en_us": "Sweet onion",
+              "vendor": "Generic",
+              "unit": "g",
+              "nutrition_facts": {
+                "uuid": "",
+                "cal": 32000,
+                "fat_total": 0.08,
+                "sodium": 0.008,
+                "carbohydrate_total": 7.55,
+                "carbohydrate_sugar": 5.02,
+                "protein": 0.08,
+                "fiber": 0.9
+              }
+            },
+            "quantity": 50
+          },
+          {
+            "product": {
+              "uuid": "0f56e499-0c1f-4101-aa77-481f6fefd07c",
+              "name": "extra virgin olive oil",
+              "lang_es_es": "Aceite de oliva virgen extra",
+              "lang_en_us": "Extra virgin olive oil",
+              "vendor": "Mercadona",
+              "unit": "g",
+              "nutrition_facts": {
+                "uuid": "",
+                "cal": 822000,
+                "fat_total": 91,
+                "fat_saturated": 13,
+                "fat_monounsaturated": 72,
+                "fat_polyunsaturated": 6
+              }
+            },
+            "quantity": 15
+          }
+        ]
+      }
+    ],
+    "ingredients": null
+  },
+  {
+    "uuid": "2a7761e5-3128-4c19-ba59-a208ef99f961",
+    "user_uuid": "f0a443f6-0906-47ea-9c62-4c1fbec31942",
+    "name": "Cena - Hamburguesa con pure de patata",
+    "label": "DINNER",
+    "recipes": [
+      {
+        "uuid": "3c423f44-8d7b-40f9-b3e0-5a9b146f9d94",
+        "user_uuid": "f0a443f6-0906-47ea-9c62-4c1fbec31942",
+        "name": "burguer and mashed potato",
+        "ingredients": [
+          {
+            "product": {
+              "uuid": "f0c6c19a-c255-4713-bf87-9ef03dda75c4",
+              "name": "minced beef",
+              "lang_es_es": "Carne picada de vacuno",
+              "lang_en_us": "Minced Beef",
+              "vendor": "Mercadona",
+              "unit": "g",
+              "nutrition_facts": {
+                "uuid": "",
+                "cal": 204000,
+                "fat_total": 14,
+                "fat_saturated": 6.6,
+                "salt": 0.4,
+                "carbohydrate_total": 0.5,
+                "carbohydrate_sugar": 0.5,
+                "protein": 19
+              }
+            },
+            "quantity": 120
+          },
+          {
+            "product": {
+              "uuid": "3a4b4440-28ce-4d73-81cb-5c2ba2687a86",
+              "name": "potato",
+              "lang_es_es": "Patata",
+              "lang_en_us": "Potato",
+              "vendor": "Mercadona",
+              "unit": "g",
+              "nutrition_facts": {
+                "uuid": "",
+                "cal": 68000,
+                "sodium": 0.01,
+                "carbohydrate_total": 14.5,
+                "carbohydrate_sugar": 2.1,
+                "protein": 1.9,
+                "fiber": 1.4
+              }
+            },
+            "quantity": 300
+          }
+        ]
+      }
+    ],
+    "ingredients": null
+  },
+  {
+    "uuid": "80f3c662-516a-4aba-baf6-0891cc29cc4c",
+    "user_uuid": "f0a443f6-0906-47ea-9c62-4c1fbec31942",
+    "name": "Almuerzo - Muslo de pato confitado con patatas",
+    "label": "LUNCH",
+    "recipes": [
+      {
+        "uuid": "392f3171-1ca0-4ed2-9aa9-39fcef42279b",
+        "user_uuid": "f0a443f6-0906-47ea-9c62-4c1fbec31942",
+        "name": "duck thigh confit with roasted potatos",
+        "ingredients": [
+          {
+            "product": {
+              "uuid": "a6dfa120-aa21-45c2-a09d-e3dcd6697d9c",
+              "name": "duck thigh confit",
+              "lang_es_es": "Muslo de pato confitado",
+              "lang_en_us": "Duck thigh confit",
+              "vendor": "Mercadona",
+              "unit": "g",
+              "nutrition_facts": {
+                "uuid": "",
+                "cal": 269000,
+                "fat_total": 19,
+                "fat_saturated": 5.9,
+                "salt": 1.5,
+                "carbohydrate_total": 1.1,
+                "carbohydrate_sugar": 1.1,
+                "protein": 23
+              }
+            },
+            "quantity": 350
+          },
+          {
+            "product": {
+              "uuid": "3a4b4440-28ce-4d73-81cb-5c2ba2687a86",
+              "name": "potato",
+              "lang_es_es": "Patata",
+              "lang_en_us": "Potato",
+              "vendor": "Mercadona",
+              "unit": "g",
+              "nutrition_facts": {
+                "uuid": "",
+                "cal": 68000,
+                "sodium": 0.01,
+                "carbohydrate_total": 14.5,
+                "carbohydrate_sugar": 2.1,
+                "protein": 1.9,
+                "fiber": 1.4
+              }
+            },
+            "quantity": 300
+          },
+          {
+            "product": {
+              "uuid": "c407bd19-b5e0-496b-9afe-d6de4c7e8b44",
+              "name": "Japanese Mayo",
+              "lang_es_es": "Mayonesa Japonesa",
+              "lang_en_us": "Japanese Mayo",
+              "vendor": "Kewpie",
+              "unit": "g",
+              "nutrition_facts": {
+                "uuid": "",
+                "cal": 694000,
+                "fat_total": 74,
+                "fat_saturated": 6.6,
+                "salt": 2.5,
+                "carbohydrate_total": 4.1,
+                "carbohydrate_sugar": 1.8,
+                "protein": 1.9
+              }
+            },
+            "quantity": 20
+          }
+        ]
+      }
+    ],
+    "ingredients": null
+  }
+]

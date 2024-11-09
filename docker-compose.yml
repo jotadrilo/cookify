@@ -1,0 +1,9 @@
+services:
+  postgresql:
+    image: bitnami/postgresql:17
+    environment:
+      POSTGRESQL_USERNAME: 'root'
+      POSTGRESQL_PASSWORD: 'root'
+      POSTGRESQL_DATABASE: 'cookify'
+    ports:
+      - '5433:5432'
