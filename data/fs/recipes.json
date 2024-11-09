@@ -1,0 +1,286 @@
+[
+  {
+    "uuid": "2172dc3f-f126-48d4-a055-eda635d62757",
+    "user_uuid": "ecc5fe1d-f8fa-4f20-b353-85b57b4c3d28",
+    "name": "Pasta con cherries, ajos, salmón ahumado y queso cottage",
+    "ingredients": [
+      {
+        "product": {
+          "uuid": "4f5b823c-1c13-42bc-9ccb-7035ced3c4a5",
+          "slug": "ajo-troceado-hacendado-ultracongelado-paquete",
+          "display_name_lang_es_es": "Ajo troceado Hacendado ultracongelado",
+          "vendors": [
+            "Hacendado"
+          ],
+          "unit": "g",
+          "price": {
+            "uuid": "",
+            "price": 6.8,
+            "quantity": 1000
+          },
+          "nutrition_facts": {
+            "uuid": "",
+            "cal": 146000,
+            "fat_total": 3.2,
+            "fat_saturated": 0.4,
+            "salt": 0.05,
+            "carbohydrate_total": 24,
+            "carbohydrate_sugar": 2.3,
+            "protein": 5.1,
+            "fiber": 1.2
+          }
+        },
+        "quantity": 10
+      },
+      {
+        "product": {
+          "uuid": "99b94a47-e532-4c2a-a2a7-796891a6c7c0",
+          "slug": "pasta-tortiglioni-armando-paquete",
+          "display_name_lang_es_es": "Pasta tortiglioni Armando",
+          "vendors": [
+            "Armando"
+          ],
+          "unit": "g",
+          "price": {
+            "uuid": "",
+            "price": 2.54,
+            "quantity": 1000
+          },
+          "nutrition_facts": {
+            "uuid": "",
+            "cal": 354000,
+            "fat_total": 1.3,
+            "fat_saturated": 0.3,
+            "salt": 0.005,
+            "carbohydrate_total": 70.2,
+            "carbohydrate_sugar": 3.2,
+            "protein": 14,
+            "fiber": 2.7
+          }
+        },
+        "quantity": 120
+      },
+      {
+        "product": {
+          "uuid": "b4675336-fcab-4364-9b10-c7c8430c79a0",
+          "slug": "queso-fresco-cottage-semidesnatado-vaca-hacendado-tarrina",
+          "display_name_lang_es_es": "Queso fresco cottage semidesnatado de vaca Hacendado",
+          "vendors": [
+            "Hacendado"
+          ],
+          "unit": "g",
+          "price": {
+            "uuid": "",
+            "price": 6.1,
+            "quantity": 1000
+          },
+          "nutrition_facts": {
+            "uuid": "",
+            "cal": 99000,
+            "fat_total": 4,
+            "fat_saturated": 2.6,
+            "salt": 0.82,
+            "carbohydrate_total": 1.7,
+            "carbohydrate_sugar": 1.7,
+            "protein": 14
+          }
+        },
+        "quantity": 200
+      },
+      {
+        "product": {
+          "uuid": "1df78e81-f1cd-4011-a900-f2f8e3627b10",
+          "slug": "taquitos-salmon-ahumado-hacendado-paquete",
+          "display_name_lang_es_es": "Taquitos de salmón ahumado Hacendado",
+          "vendors": [
+            "Hacendado"
+          ],
+          "unit": "g",
+          "price": {
+            "uuid": "",
+            "price": 38,
+            "quantity": 1000
+          },
+          "nutrition_facts": {
+            "uuid": "",
+            "cal": 182000,
+            "fat_total": 10,
+            "fat_saturated": 1.5,
+            "salt": 2.8,
+            "carbohydrate_total": 0.5,
+            "carbohydrate_sugar": 0.5,
+            "protein": 22
+          }
+        },
+        "quantity": 100
+      },
+      {
+        "product": {
+          "uuid": "794ab826-3001-467c-ae68-9af8ae8f5e68",
+          "slug": "tomates-cherry-bandeja",
+          "display_name_lang_es_es": "Tomates cherry",
+          "vendors": [
+            ""
+          ],
+          "unit": "g",
+          "price": {
+            "uuid": "",
+            "price": 3.88,
+            "quantity": 1000
+          },
+          "nutrition_facts": {
+            "uuid": "",
+            "cal": 20000,
+            "fat_total": 0.5,
+            "fat_saturated": 2,
+            "carbohydrate_total": 2,
+            "carbohydrate_sugar": 2,
+            "protein": 2,
+            "fiber": 2
+          }
+        },
+        "quantity": 250
+      },
+      {
+        "product": {
+          "uuid": "dbb5d0b1-1adc-42fa-b1dd-627f0aced0df",
+          "slug": "aceite-oliva-virgen-extra-hacendado-botella",
+          "display_name_lang_es_es": "Aceite de oliva virgen extra Hacendado",
+          "vendors": [
+            "Hacendado"
+          ],
+          "unit": "l",
+          "price": {
+            "uuid": "",
+            "price": 6.75,
+            "quantity": 1
+          },
+          "nutrition_facts": {
+            "uuid": "",
+            "cal": 822000,
+            "fat_total": 91,
+            "fat_saturated": 13,
+            "fat_monounsaturated": 72,
+            "fat_polyunsaturated": 6
+          }
+        },
+        "quantity": 30
+      }
+    ]
+  },
+  {
+    "uuid": "d9b48a4d-a291-4e73-8acb-2d80641c0ddc",
+    "user_uuid": "ecc5fe1d-f8fa-4f20-b353-85b57b4c3d28",
+    "name": "Mollete con aceite, lonchas de pavo y tomate",
+    "ingredients": [
+      {
+        "product": {
+          "uuid": "dbb5d0b1-1adc-42fa-b1dd-627f0aced0df",
+          "slug": "aceite-oliva-virgen-extra-hacendado-botella",
+          "display_name_lang_es_es": "Aceite de oliva virgen extra Hacendado",
+          "vendors": [
+            "Hacendado"
+          ],
+          "unit": "l",
+          "price": {
+            "uuid": "",
+            "price": 6.75,
+            "quantity": 1
+          },
+          "nutrition_facts": {
+            "uuid": "",
+            "cal": 822000,
+            "fat_total": 91,
+            "fat_saturated": 13,
+            "fat_monounsaturated": 72,
+            "fat_polyunsaturated": 6
+          }
+        },
+        "quantity": 20
+      },
+      {
+        "product": {
+          "uuid": "804ede53-b259-4a3e-b304-82008b8eb66d",
+          "slug": "molletes-san-roque-antequera-paquete",
+          "display_name_lang_es_es": "Molletes San Roque de Antequera",
+          "vendors": [
+            "San Roque"
+          ],
+          "unit": "g",
+          "price": {
+            "uuid": "",
+            "price": 4.9,
+            "quantity": 1000
+          },
+          "nutrition_facts": {
+            "uuid": "",
+            "cal": 235000,
+            "fat_total": 1.1,
+            "fat_saturated": 0.2,
+            "fat_monounsaturated": 0.3,
+            "fat_polyunsaturated": 0.6,
+            "salt": 1.29,
+            "carbohydrate_total": 46.5,
+            "carbohydrate_sugar": 1.3,
+            "protein": 8.5,
+            "fiber": 2.5
+          }
+        },
+        "quantity": 105
+      },
+      {
+        "product": {
+          "uuid": "31fb8556-e1ca-4d6c-881b-1bbd431dbc0d",
+          "slug": "pechuga-pavo-92-hacendado-lonchas-paquete",
+          "display_name_lang_es_es": "Pechuga 92% pavo Hacendado lonchas",
+          "vendors": [
+            "Hacendado"
+          ],
+          "unit": "g",
+          "price": {
+            "uuid": "",
+            "price": 13.25,
+            "quantity": 1000
+          },
+          "nutrition_facts": {
+            "uuid": "",
+            "cal": 89000,
+            "fat_total": 1.3,
+            "fat_saturated": 0.5,
+            "salt": 1.9,
+            "carbohydrate_total": 1,
+            "carbohydrate_sugar": 1,
+            "protein": 19.5
+          }
+        },
+        "quantity": 30
+      },
+      {
+        "product": {
+          "uuid": "072e4b4d-9424-4b89-b505-18063f4c308f",
+          "slug": "tomate-canario-pieza",
+          "display_name_lang_es_es": "Tomate canario",
+          "vendors": [
+            ""
+          ],
+          "unit": "g",
+          "price": {
+            "uuid": "",
+            "price": 1.84,
+            "quantity": 1000
+          },
+          "nutrition_facts": {
+            "uuid": "",
+            "cal": 22000,
+            "fat_total": 0.25,
+            "carbohydrate_total": 4.82,
+            "carbohydrate_sugar": 3.2,
+            "protein": 1.08,
+            "fiber": 1.5
+          }
+        },
+        "quantity": 100
+      }
+    ]
+  }
+]

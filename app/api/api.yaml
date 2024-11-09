@@ -1,0 +1,1006 @@
+openapi: 3.1.1
+
+info:
+  version: v1
+  title: Cookify API
+  description: Manage Cookify
+  contact:
+    name: Jose Daniel Rios
+    email: josriolop@gmail.com
+
+servers:
+  - url: localhost:8080
+    description: Local Cookify Server
+
+tags:
+  - name: users
+    description: Users operations
+  - name: products
+    description: Products operations
+  - name: recipes
+    description: Recipes operations
+  - name: menus
+    description: Menus operations
+  - name: daily-menus
+    description: Daily Menus operations
+
+paths:
+  /admin/users:
+    get:
+      tags:
+        - users
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref:  '#/components/schemas/Users'
+        "400":
+          description: Bad Request
+          content:
+            application/problem+json:
+              schema:
+                # We should use the constraint validation error but we are not handling it right now
+                $ref: '#/components/schemas/Error'
+        "500":
+          description: Internal Error
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /users/{ParamUserID}:
+    get:
+      tags:
+        - users
+      parameters:
+        - $ref: '#/components/parameters/ParamUserID'
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref:  '#/components/schemas/User'
+        "400":
+          description: Bad Request
+          content:
+            application/problem+json:
+              schema:
+                # We should use the constraint validation error but we are not handling it right now
+                $ref: '#/components/schemas/Error'
+        "500":
+          description: Internal Error
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /products:
+    get:
+      tags:
+        - products
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref:  '#/components/schemas/Product'
+        "400":
+          description: Bad Request
+          content:
+            application/problem+json:
+              schema:
+                # We should use the constraint validation error but we are not handling it right now
+                $ref: '#/components/schemas/Error'
+        "500":
+          description: Internal Error
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    post:
+      tags:
+        - products
+      requestBody:
+        $ref: '#/components/requestBodies/CreateProduct'
+      responses:
+        "201":
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProductID'
+        "409":
+          description: Already Exists
+          content:
+            application/problem+json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/Error'
+                  - $ref: '#/components/schemas/ProductID'
+        "500":
+          description: Internal Error
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /products/{ParamProductID}:
+    get:
+      tags:
+        - products
+      parameters:
+        - $ref: '#/components/parameters/ParamProductID'
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Product'
+        "400":
+          description: Bad Request
+          content:
+            application/problem+json:
+              schema:
+                # We should use the constraint validation error but we are not handling it right now
+                $ref: '#/components/schemas/Error'
+        "500":
+          description: Internal Error
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /users/{ParamUserID}/recipes:
+    get:
+      tags:
+        - recipes
+      parameters:
+        - $ref: '#/components/parameters/ParamUserID'
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref:  '#/components/schemas/Recipe'
+        "400":
+          description: Bad Request
+          content:
+            application/problem+json:
+              schema:
+                # We should use the constraint validation error but we are not handling it right now
+                $ref: '#/components/schemas/Error'
+        "500":
+          description: Internal Error
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    post:
+      tags:
+        - recipes
+      parameters:
+        - $ref: '#/components/parameters/ParamUserID'
+      requestBody:
+        $ref: '#/components/requestBodies/CreateRecipe'
+      responses:
+        "201":
+          description: Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RecipeID'
+        "409":
+          description: Already Exists
+          content:
+            application/problem+json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/Error'
+                  - $ref: '#/components/schemas/ProductID'
+        "500":
+          description: Internal Error
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /users/{ParamUserID}/recipes/{ParamRecipeID}:
+    get:
+      tags:
+        - recipes
+      parameters:
+        - $ref: '#/components/parameters/ParamUserID'
+        - $ref: '#/components/parameters/ParamRecipeID'
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Recipe'
+        "400":
+          description: Bad Request
+          content:
+            application/problem+json:
+              schema:
+                # We should use the constraint validation error but we are not handling it right now
+                $ref: '#/components/schemas/Error'
+        "500":
+          description: Internal Error
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    patch:
+      tags:
+        - recipes
+      parameters:
+        - $ref: '#/components/parameters/ParamUserID'
+        - $ref: '#/components/parameters/ParamRecipeID'
+      requestBody:
+        description: Update recipe with properties to be changed
+        content:
+          application/json:
+            schema:
+              $ref:  '#/components/schemas/RecipeProperties'
+      responses:
+        "204":
+          description: Updated
+        "304":
+          description: Not Modified
+        "500":
+          description: Internal Error
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /users/{ParamUserID}/menus:
+    get:
+      tags:
+        - menus
+      parameters:
+        - $ref: '#/components/parameters/ParamUserID'
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref:  '#/components/schemas/Menu'
+        "400":
+          description: Bad Request
+          content:
+            application/problem+json:
+              schema:
+                # We should use the constraint validation error but we are not handling it right now
+                $ref: '#/components/schemas/Error'
+        "500":
+          description: Internal Error
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /users/{ParamUserID}/menus/{ParamMenuID}:
+    get:
+      tags:
+        - menus
+      parameters:
+        - $ref: '#/components/parameters/ParamUserID'
+        - $ref: '#/components/parameters/ParamMenuID'
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref:  '#/components/schemas/MenuDetailed'
+        "400":
+          description: Bad Request
+          content:
+            application/problem+json:
+              schema:
+                # We should use the constraint validation error but we are not handling it right now
+                $ref: '#/components/schemas/Error'
+        "500":
+          description: Internal Error
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /users/{ParamUserID}/daily-menus:
+    get:
+      tags:
+        - daily-menus
+      parameters:
+        - $ref: '#/components/parameters/ParamUserID'
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref:  '#/components/schemas/DailyMenu'
+        "400":
+          description: Bad Request
+          content:
+            application/problem+json:
+              schema:
+                # We should use the constraint validation error but we are not handling it right now
+                $ref: '#/components/schemas/Error'
+        "500":
+          description: Internal Error
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+  /users/{ParamUserID}/daily-menus/{ParamDailyMenuID}:
+    get:
+      tags:
+        - daily-menus
+      parameters:
+        - $ref: '#/components/parameters/ParamUserID'
+        - $ref: '#/components/parameters/ParamDailyMenuID'
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref:  '#/components/schemas/DailyMenuDetailed'
+        "400":
+          description: Bad Request
+          content:
+            application/problem+json:
+              schema:
+                # We should use the constraint validation error but we are not handling it right now
+                $ref: '#/components/schemas/Error'
+        "500":
+          description: Internal Error
+          content:
+            application/problem+json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+components:
+  schemas:
+    Error:
+      required:
+        - title
+        - status
+      type: object
+      properties:
+        title:
+          type: string
+          description: "A short, human-readable summary of the problem type"
+          example: You do not have enough credit.
+        status:
+          type: integer
+          description: The HTTP status code generated by the origin server for this occurrence of the problem
+          example: 403
+        detail:
+          type: string
+          description: A human-readable explanation specific to this occurrence of the problem
+          example: "Your current balance is 30, but that costs 50"
+      description: |
+        Note: It follows [RFC-7807](https://tools.ietf.org/html/rfc7807#page-9) **proposed** standard
+
+        Error object returned on any failure. It can be extended to add more params
+    ConstraintsViolation:
+      required:
+        - field
+        - message
+      type: object
+      properties:
+        field:
+          type: string
+          description: The field that is causing the constraints violation
+          example: retries
+        message:
+          type: string
+          description: The human-readable constraints violation description
+          example: Should be greater than zero
+      description: It represents a constraints violation error
+    ConstraintsViolationsError:
+      required:
+        - violations
+      type: object
+      properties:
+        violations:
+          type: array
+          example:
+            - field: retries
+              message: Should be greater than zero
+          items:
+            $ref: '#/components/schemas/ConstraintsViolation'
+      description: Error object extension for returning a constraints violation error
+      example:
+        title: Validation error
+        status: 400
+        detail: There was an error validating the request
+        violations:
+          - field: amount
+            message: It should be greater than zero
+      allOf:
+        - $ref: '#/components/schemas/Error'
+
+    Unit:
+      type: string
+      description: Measure unit.
+      enum:
+        - l
+        - L
+        - g
+        - G
+        - kg
+        - KG
+    Gender:
+      type: string
+      description: User gender.
+      enum:
+        - male
+        - female
+    MenuLabel:
+      type: string
+      description: Menu label.
+      enum:
+        - BREAKFAST
+        - MORNING_SNACK
+        - LUNCH
+        - AFTERNOON_SNACK
+        - DINNER
+      default: LUNCH
+    Price:
+      type: object
+      description: "A price"
+      required:
+        - price
+        - quantity
+      properties:
+        uuid:
+          type: string
+          format: uuid
+          example: 5683f09e-44f0-48fa-ac45-c641fa734a5f
+          x-order: 1
+        price:
+          description: Price of an item
+          type: number
+          format: float
+          example: 10.5
+        quantity:
+          description: Quantity that the price is associated to (based on the item's unit)
+          type: number
+          format: float
+          example: 100.0
+
+    ID:
+      type: string
+      format: uuid
+      example: 130ac7f5-31f4-4c29-9593-e73c822030ba
+      x-order: 1
+    ProductID:
+      type: object
+      properties:
+        uuid:
+          $ref: '#/components/schemas/ID'
+    RecipeID:
+      type: object
+      properties:
+        uuid:
+          $ref: '#/components/schemas/ID'
+
+    ProductProperties:
+      type: object
+      properties:
+        slug:
+          description: Slug of a product
+          type: string
+        display_name_lang_es_es:
+          description: Display name of a product in es-ES language
+          type: string
+        display_name_lang_en_us:
+          description: Display name of a product in en-US language
+          type: string
+        vendors:
+          description: Vendors of a product
+          type: array
+          items:
+            type: string
+        unit:
+          $ref: '#/components/schemas/Unit'
+        current_price:
+          description: Current price of a product
+          $ref: '#/components/schemas/Price'
+        nutrition_facts_100:
+          $ref: '#/components/schemas/NutritionFacts'
+    ProductRequiredProperties:
+      type: object
+      required:
+        - slug
+        - unit
+        - nutrition_facts_100
+    Product:
+      type: object
+      description: "A product"
+      allOf:
+        - $ref: '#/components/schemas/ProductID'
+        - $ref: '#/components/schemas/ProductProperties'
+        - $ref: '#/components/schemas/ProductRequiredProperties'
+
+    RecipeProperties:
+      type: object
+      properties:
+        name:
+          type: string
+          description: Name of a recipe
+        ingredients:
+          type: array
+          items:
+            $ref: '#/components/schemas/Ingredient'
+        quantity:
+          type: number
+          format: float
+          description: Total quantity
+        nutrition_facts_100:
+          $ref: '#/components/schemas/NutritionFacts'
+        nutrition_facts_total:
+          $ref: '#/components/schemas/NutritionFacts'
+    RecipeRequiredProperties:
+      type: object
+      required:
+        - name
+        - ingredients
+    Recipe:
+      type: object
+      description: "A recipe"
+      allOf:
+        - $ref: '#/components/schemas/RecipeID'
+        - $ref: '#/components/schemas/RecipeProperties'
+        - $ref: '#/components/schemas/RecipeRequiredProperties'
+
+    Ingredient:
+      type: object
+      description: "An ingredient"
+      required:
+        - product
+        - quantity
+      properties:
+        product:
+          $ref: '#/components/schemas/Product'
+        quantity:
+          type: number
+          format: float
+          description: Product quantity
+
+    NutritionFacts:
+      type: object
+      description: "Nutrition facts of a meal"
+      required:
+        - cal
+      properties:
+        cal:
+          type: number
+          format: float
+          description: Calories (cal)
+        fat_total:
+          type: number
+          format: float
+          description: Total fats (g)
+        fat_saturated:
+          type: number
+          format: float
+          description: Saturated fats (g)
+        fat_monounsaturated:
+          type: number
+          format: float
+          description: Monounsaturated fats (g)
+        fat_polyunsaturated:
+          type: number
+          format: float
+          description: Polyunsaturated fats (g)
+        cholesterol:
+          type: number
+          format: float
+          description: Cholesterol (g)
+        salt:
+          type: number
+          format: float
+          description: Salt (g)
+        sodium:
+          type: number
+          format: float
+          description: Sodium (g)
+        potassium:
+          type: number
+          format: float
+          description: Potassium (g)
+        carbohydrate_total:
+          type: number
+          format: float
+          description: Total Carbohydrates (g)
+        carbohydrate_sugar:
+          type: number
+          format: float
+          description: Sugar Carbohydrates (g)
+        protein:
+          type: number
+          format: float
+          description: Proteins (g)
+        fiber:
+          type: number
+          format: float
+          description: Fiber (g)
+        calcium:
+          type: number
+          format: float
+          description: Calcium (g)
+        iron:
+          type: number
+          format: float
+          description: Iron (g)
+        caffeine:
+          type: number
+          format: float
+          description: Caffeine (g)
+        vitamin_a:
+          type: number
+          format: float
+          description: Vitamin A (g)
+        vitamin_b1:
+          type: number
+          format: float
+          description: Vitamin B1 (g)
+        vitamin_b2:
+          type: number
+          format: float
+          description: Vitamin B2 (g)
+        vitamin_b3:
+          type: number
+          format: float
+          description: Vitamin B3 (g)
+        vitamin_b4:
+          type: number
+          format: float
+          description: Vitamin B4 (g)
+        vitamin_b5:
+          type: number
+          format: float
+          description: Vitamin B5 (g)
+        vitamin_b6:
+          type: number
+          format: float
+          description: Vitamin B6 (g)
+        vitamin_b12:
+          type: number
+          format: float
+          description: Vitamin B12 (g)
+        vitamin_c:
+          type: number
+          format: float
+          description: Vitamin C (g)
+        vitamin_d:
+          type: number
+          format: float
+          description: Vitamin D (g)
+        vitamin_e:
+          type: number
+          format: float
+          description: Vitamin E (g)
+        vitamin_k:
+          type: number
+          format: float
+          description: Vitamin K (g)
+    DailyValues:
+      type: object
+      description: "Recommended Daily Values"
+      properties:
+        fat_saturated:
+          type: number
+          format: float
+          description: Saturated fats DV (%)
+        cholesterol:
+          type: number
+          format: float
+          description: Cholesterol DV (%)
+        salt:
+          type: number
+          format: float
+          description: Salt DV (%)
+        sodium:
+          type: number
+          format: float
+          description: Sodium DV (%)
+        potassium:
+          type: number
+          format: float
+          description: Potassium DV (%)
+        carbohydrate_total:
+          type: number
+          format: float
+          description: Total Carbohydrates DV (%)
+        carbohydrate_sugar:
+          type: number
+          format: float
+          description: Sugar Carbohydrates DV (%)
+        protein:
+          type: number
+          format: float
+          description: Proteins DV (%)
+        fiber:
+          type: number
+          format: float
+          description: Fiber DV (%)
+        calcium:
+          type: number
+          format: float
+          description: Calcium DV (%)
+        iron:
+          type: number
+          format: float
+          description: Iron DV (%)
+        caffeine:
+          type: number
+          format: float
+          description: Caffeine DV (%)
+        vitamin_a:
+          type: number
+          format: float
+          description: Vitamin A DV (%)
+        vitamin_b1:
+          type: number
+          format: float
+          description: Vitamin B1 DV (%)
+        vitamin_b2:
+          type: number
+          format: float
+          description: Vitamin B2 DV (%)
+        vitamin_b3:
+          type: number
+          format: float
+          description: Vitamin B3 DV (%)
+        vitamin_b4:
+          type: number
+          format: float
+          description: Vitamin B4 DV (%)
+        vitamin_b5:
+          type: number
+          format: float
+          description: Vitamin B5 DV (%)
+        vitamin_b6:
+          type: number
+          format: float
+          description: Vitamin B6 DV (%)
+        vitamin_b12:
+          type: number
+          format: float
+          description: Vitamin B12 DV (%)
+        vitamin_c:
+          type: number
+          format: float
+          description: Vitamin C DV (%)
+        vitamin_d:
+          type: number
+          format: float
+          description: Vitamin D DV (%)
+        vitamin_e:
+          type: number
+          format: float
+          description: Vitamin E DV (%)
+        vitamin_k:
+          type: number
+          format: float
+          description: Vitamin K DV (%)
+    Menu:
+      type: object
+      description: "A menu"
+      required:
+        - name
+        - label
+      properties:
+        uuid:
+          type: string
+          format: uuid
+          example: 5683f09e-44f0-48fa-ac45-c641fa734a5f
+          x-order: 1
+        name:
+          type: string
+          description: Name of a menu
+        label:
+          $ref: '#/components/schemas/MenuLabel'
+    Menus:
+      type: array
+      description: List of menus.
+      items:
+        $ref: '#/components/schemas/Menu'
+    MenuDetailed:
+      type: object
+      description: "An ingredient"
+      required:
+        - name
+        - label
+      properties:
+        uuid:
+          type: string
+          format: uuid
+          example: 5683f09e-44f0-48fa-ac45-c641fa734a5f
+          x-order: 1
+        name:
+          type: string
+          description: Name of a menu
+        label:
+          $ref: '#/components/schemas/MenuLabel'
+        ingredients:
+          type: array
+          items:
+            $ref: '#/components/schemas/Ingredient'
+        recipes:
+          type: array
+          items:
+            $ref: '#/components/schemas/Recipe'
+        nutrition_facts_total:
+          $ref: '#/components/schemas/NutritionFacts'
+    MenusDetailed:
+      type: array
+      description: List of menus.
+      items:
+        $ref: '#/components/schemas/MenuDetailed'
+    DailyMenu:
+      type: object
+      description: "A daily menu"
+      required:
+        - name
+      properties:
+        uuid:
+          type: string
+          format: uuid
+          example: 5683f09e-44f0-48fa-ac45-c641fa734a5f
+          x-order: 1
+        name:
+          type: string
+          description: Name of a daily menu
+    DailyMenus:
+      type: array
+      description: List of daily menus.
+      items:
+        $ref: '#/components/schemas/DailyMenu'
+    DailyMenuDetailed:
+      type: object
+      description: "An ingredient"
+      required:
+        - name
+        - menus
+      properties:
+        uuid:
+          type: string
+          format: uuid
+          example: 5683f09e-44f0-48fa-ac45-c641fa734a5f
+          x-order: 1
+        name:
+          type: string
+          description: Name of a daily menu
+        menus:
+          $ref: '#/components/schemas/MenusDetailed'
+        nutrition_facts_total:
+          $ref: '#/components/schemas/NutritionFacts'
+    DailyMenusDetailed:
+      type: array
+      description: List of daily menus.
+      items:
+        $ref: '#/components/schemas/DailyMenuDetailed'
+    User:
+      type: object
+      description: "A user"
+      required:
+        - name
+        - email
+        - gender
+        - birthday
+        - weight
+        - height
+      properties:
+        uuid:
+          type: string
+          format: uuid
+          example: 5683f09e-44f0-48fa-ac45-c641fa734a5f
+          x-order: 1
+        name:
+          type: string
+          description: Name of a user
+        email:
+          type: string
+          description: Email of a user
+        gender:
+          type: string
+          description: Email of a user
+        birthday:
+          type: string
+          format: date
+          description: Birthday of a user
+        weight:
+          type: number
+          format: float
+          description: Weight of a user
+        height:
+          type: number
+          format: float
+          description: Height of a user
+        bmr_mifflin_st_jeor:
+          type: number
+          format: float
+          description: Basal Metabolism Rate according to the Mifflin-St Jeor equation
+        bmr_revised_harris_benedict:
+          type: number
+          format: float
+          description: Basal Metabolism Rate according to the revised Harris Benedict equation
+    Users:
+      type: array
+      description: List of users.
+      items:
+        $ref: '#/components/schemas/User'
+
+  requestBodies:
+    CreateProduct:
+      description: Create a new product
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: '#/components/schemas/ProductProperties'
+              - $ref: '#/components/schemas/ProductRequiredProperties'
+    CreateRecipe:
+      description: Create a new recipe
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: '#/components/schemas/RecipeProperties'
+              - $ref: '#/components/schemas/RecipeRequiredProperties'
+
+  parameters:
+    ParamUserID:
+      name: ParamUserID
+      in: path
+      required: true
+      schema:
+        $ref: '#/components/schemas/ID'
+    ParamProductID:
+      name: ParamProductID
+      in: path
+      required: true
+      schema:
+        $ref: '#/components/schemas/ID'
+    ParamRecipeID:
+      name: ParamRecipeID
+      in: path
+      required: true
+      schema:
+        $ref: '#/components/schemas/ID'
+    ParamMenuID:
+      name: ParamMenuID
+      in: path
+      required: true
+      schema:
+        $ref: '#/components/schemas/ID'
+    ParamDailyMenuID:
+      name: ParamDailyMenuID
+      in: path
+      required: true
+      schema:
+        $ref: '#/components/schemas/ID'

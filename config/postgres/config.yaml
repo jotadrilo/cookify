@@ -1,0 +1,13 @@
+server:
+  address: localhost:8080
+  gin:
+    mode: debug
+database:
+  postgres:
+    host: localhost
+    port: 5433
+    user: root
+    pass: root
+    database: cookify
+    insecure: true
+    bun_verbose: true
