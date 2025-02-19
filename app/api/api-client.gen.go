@@ -103,6 +103,9 @@ type ClientInterface interface {
 	// GetProductsParamProductID request
 	GetProductsParamProductID(ctx context.Context, paramProductID ParamProductID, reqEditors ...RequestEditorFn) (*http.Response, error)
 
+	// GetProductsParamProductIDEquivalents request
+	GetProductsParamProductIDEquivalents(ctx context.Context, paramProductID ParamProductID, reqEditors ...RequestEditorFn) (*http.Response, error)
+
 	// GetUsersParamUserID request
 	GetUsersParamUserID(ctx context.Context, paramUserID ParamUserID, reqEditors ...RequestEditorFn) (*http.Response, error)
 
@@ -185,6 +188,18 @@ func (c *Client) PostProducts(ctx context.Context, body PostProductsJSONRequestB
 
 func (c *Client) GetProductsParamProductID(ctx context.Context, paramProductID ParamProductID, reqEditors ...RequestEditorFn) (*http.Response, error) {
 	req, err := NewGetProductsParamProductIDRequest(c.Server, paramProductID)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) GetProductsParamProductIDEquivalents(ctx context.Context, paramProductID ParamProductID, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGetProductsParamProductIDEquivalentsRequest(c.Server, paramProductID)
 	if err != nil {
 		return nil, err
 	}
@@ -438,6 +453,40 @@ func NewGetProductsParamProductIDRequest(server string, paramProductID ParamProd
 	}
 
 	operationPath := fmt.Sprintf("/products/%s", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGetProductsParamProductIDEquivalentsRequest generates requests for GetProductsParamProductIDEquivalents
+func NewGetProductsParamProductIDEquivalentsRequest(server string, paramProductID ParamProductID) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithLocation("simple", false, "ParamProductID", runtime.ParamLocationPath, paramProductID)
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/products/%s/equivalents", pathParam0)
 	if operationPath[0] == '/' {
 		operationPath = "." + operationPath
 	}
@@ -872,6 +921,9 @@ type ClientWithResponsesInterface interface {
 	// GetProductsParamProductIDWithResponse request
 	GetProductsParamProductIDWithResponse(ctx context.Context, paramProductID ParamProductID, reqEditors ...RequestEditorFn) (*GetProductsParamProductIDResponse, error)
 
+	// GetProductsParamProductIDEquivalentsWithResponse request
+	GetProductsParamProductIDEquivalentsWithResponse(ctx context.Context, paramProductID ParamProductID, reqEditors ...RequestEditorFn) (*GetProductsParamProductIDEquivalentsResponse, error)
+
 	// GetUsersParamUserIDWithResponse request
 	GetUsersParamUserIDWithResponse(ctx context.Context, paramUserID ParamUserID, reqEditors ...RequestEditorFn) (*GetUsersParamUserIDResponse, error)
 
@@ -1005,6 +1057,30 @@ func (r GetProductsParamProductIDResponse) Status() string {
 
 // StatusCode returns HTTPResponse.StatusCode
 func (r GetProductsParamProductIDResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type GetProductsParamProductIDEquivalentsResponse struct {
+	Body                      []byte
+	HTTPResponse              *http.Response
+	JSON200                   *[]EquivalentProduct
+	ApplicationproblemJSON400 *Error
+	ApplicationproblemJSON500 *Error
+}
+
+// Status returns HTTPResponse.Status
+func (r GetProductsParamProductIDEquivalentsResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r GetProductsParamProductIDEquivalentsResponse) StatusCode() int {
 	if r.HTTPResponse != nil {
 		return r.HTTPResponse.StatusCode
 	}
@@ -1280,6 +1356,15 @@ func (c *ClientWithResponses) GetProductsParamProductIDWithResponse(ctx context.
 	return ParseGetProductsParamProductIDResponse(rsp)
 }
 
+// GetProductsParamProductIDEquivalentsWithResponse request returning *GetProductsParamProductIDEquivalentsResponse
+func (c *ClientWithResponses) GetProductsParamProductIDEquivalentsWithResponse(ctx context.Context, paramProductID ParamProductID, reqEditors ...RequestEditorFn) (*GetProductsParamProductIDEquivalentsResponse, error) {
+	rsp, err := c.GetProductsParamProductIDEquivalents(ctx, paramProductID, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGetProductsParamProductIDEquivalentsResponse(rsp)
+}
+
 // GetUsersParamUserIDWithResponse request returning *GetUsersParamUserIDResponse
 func (c *ClientWithResponses) GetUsersParamUserIDWithResponse(ctx context.Context, paramUserID ParamUserID, reqEditors ...RequestEditorFn) (*GetUsersParamUserIDResponse, error) {
 	rsp, err := c.GetUsersParamUserID(ctx, paramUserID, reqEditors...)
@@ -1524,6 +1609,46 @@ func ParseGetProductsParamProductIDResponse(rsp *http.Response) (*GetProductsPar
 	switch {
 	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
 		var dest Product
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 400:
+		var dest Error
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.ApplicationproblemJSON400 = &dest
+
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 500:
+		var dest Error
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.ApplicationproblemJSON500 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGetProductsParamProductIDEquivalentsResponse parses an HTTP response from a GetProductsParamProductIDEquivalentsWithResponse call
+func ParseGetProductsParamProductIDEquivalentsResponse(rsp *http.Response) (*GetProductsParamProductIDEquivalentsResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &GetProductsParamProductIDEquivalentsResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest []EquivalentProduct
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
 		}

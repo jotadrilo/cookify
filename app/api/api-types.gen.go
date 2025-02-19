@@ -152,6 +152,33 @@ type DailyValues struct {
 	VitaminK *float32 `json:"vitamin_k,omitempty"`
 }
 
+// EquivalentProduct defines model for EquivalentProduct.
+type EquivalentProduct struct {
+	// NutritionFacts100Diff Nutrition facts of a meal
+	NutritionFacts100Diff NutritionFacts `json:"nutrition_facts_100_diff"`
+
+	// Product A product
+	Product Product `json:"product"`
+
+	// Score Equivalency score
+	Score float32 `json:"score"`
+}
+
+// EquivalentProductProperties defines model for EquivalentProductProperties.
+type EquivalentProductProperties struct {
+	// NutritionFacts100Diff Nutrition facts of a meal
+	NutritionFacts100Diff *NutritionFacts `json:"nutrition_facts_100_diff,omitempty"`
+
+	// Product A product
+	Product *Product `json:"product,omitempty"`
+
+	// Score Equivalency score
+	Score *float32 `json:"score,omitempty"`
+}
+
+// EquivalentProductRequiredProperties defines model for EquivalentProductRequiredProperties.
+type EquivalentProductRequiredProperties = map[string]interface{}
+
 // Error Note: It follows [RFC-7807](https://tools.ietf.org/html/rfc7807#page-9) **proposed** standard
 //
 // Error object returned on any failure. It can be extended to add more params

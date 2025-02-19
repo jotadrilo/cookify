@@ -29,6 +29,10 @@ func (x *UnimplementedProductsUseCase) GetProductByUUID(context.Context, string)
 	return nil, errorutils.NewErrNotImplemented("GetProductByUUID")
 }
 
+func (x *UnimplementedProductsUseCase) GetProductEquivalentsByUUID(context.Context, string) ([]*domain.EquivalentProduct, error) {
+	return nil, errorutils.NewErrNotImplemented("GetProductEquivalentsByUUID")
+}
+
 type ProductsUseCase struct {
 	UnimplementedProductsUseCase
 
@@ -68,4 +72,32 @@ func (x *ProductsUseCase) ListProducts(ctx context.Context) ([]*domain.Product, 
 
 func (x *ProductsUseCase) GetProductByUUID(ctx context.Context, uuid string) (*domain.Product, error) {
 	return x.Products.GetProductByUUID(ctx, uuid)
+}
+
+func (x *ProductsUseCase) GetProductEquivalentsByUUID(ctx context.Context, uuid string) ([]*domain.EquivalentProduct, error) {
+	target, err := x.Products.GetProductByUUID(ctx, uuid)
+	if err != nil {
+		return nil, err
+	}
+
+	all, err := x.Products.ListProducts(ctx)
+	if err != nil {
+		return nil, err
+	}
+
+	var options []*domain.Product
+	for _, p := range all {
+		if p.UUID == uuid {
+			continue
+		}
+
+		v, err := x.Products.GetProductByUUID(ctx, p.UUID)
+		if err != nil {
+			return nil, err
+		}
+
+		options = append(options, v)
+	}
+
+	return target.FindTopEquivalentProducts(50, 0.5, options...), nil
 }

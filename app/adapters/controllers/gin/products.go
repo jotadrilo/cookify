@@ -63,3 +63,15 @@ func (x *Controller) GetProductsParamProductID(c *gin.Context, productID api.Par
 
 	c.JSON(http.StatusOK, DomainProductToAPIProduct(v))
 }
+
+func (x *Controller) GetProductsParamProductIDEquivalents(c *gin.Context, productID api.ParamProductID) {
+	var ctx = c.Request.Context()
+
+	items, err := x.Products.GetProductEquivalentsByUUID(ctx, productID.String())
+	if err != nil {
+		RestErrorHandler(c, err)
+		return
+	}
+
+	c.JSON(http.StatusOK, DomainEquivalentProductsToAPIEquivalentProducts(items))
+}

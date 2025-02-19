@@ -58,6 +58,10 @@ func (u UnimplementedGinController) GetProductsParamProductID(c *gin.Context, _ 
 	RestErrorHandler(c, errorutils.NewErrNotImplemented("endpoint"))
 }
 
+func (u UnimplementedGinController) GetProductsParamProductIDEquivalents(c *gin.Context, _ api.ParamProductID) {
+	RestErrorHandler(c, errorutils.NewErrNotImplemented("endpoint"))
+}
+
 func (u UnimplementedGinController) GetUsersParamUserID(c *gin.Context, userID api.ParamUserID) {
 	RestErrorHandler(c, errorutils.NewErrNotImplemented("endpoint"))
 }

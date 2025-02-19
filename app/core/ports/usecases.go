@@ -25,6 +25,7 @@ type ProductsUseCase interface {
 	CreateProduct(ctx context.Context, product *domain.Product) (*domain.Product, error)
 	ListProducts(ctx context.Context) ([]*domain.Product, error)
 	GetProductByUUID(ctx context.Context, productID string) (*domain.Product, error)
+	GetProductEquivalentsByUUID(ctx context.Context, productID string) ([]*domain.EquivalentProduct, error)
 }
 
 type RecipesUseCase interface {

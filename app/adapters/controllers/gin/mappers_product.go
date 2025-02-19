@@ -60,3 +60,19 @@ func ProductRequestToDomainProduct(v *api.PostProductsJSONRequestBody) *domain.P
 		NutritionFacts:      NutritionFactsToDomainNutritionFacts(&v.NutritionFacts100),
 	}
 }
+
+func DomainEquivalentProductToAPIEquivalentProduct(v *domain.EquivalentProduct) *api.EquivalentProduct {
+	if v == nil {
+		return nil
+	}
+
+	return &api.EquivalentProduct{
+		NutritionFacts100Diff: *DomainNutritionFactsToAPINutritionFacts(v.NutritionFactsDiff),
+		Product:               *DomainProductToAPIProduct(v.Product),
+		Score:                 *oapi.Float32(v.Score),
+	}
+}
+
+func DomainEquivalentProductsToAPIEquivalentProducts(s []*domain.EquivalentProduct) []*api.EquivalentProduct {
+	return slices.Map(s, DomainEquivalentProductToAPIEquivalentProduct)
+}

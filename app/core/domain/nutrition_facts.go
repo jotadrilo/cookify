@@ -1,6 +1,8 @@
 package domain
 
 import (
+	"math"
+
 	validation "github.com/go-ozzo/ozzo-validation"
 )
 
@@ -43,6 +45,10 @@ func (a *NutritionFacts) Validate() error {
 }
 
 func (x *NutritionFacts) Multiply(q float32) *NutritionFacts {
+	if x == nil {
+		return nil
+	}
+
 	return &NutritionFacts{
 		Cal:                x.Cal * q,
 		FatTotal:           x.FatTotal * q,
@@ -114,4 +120,91 @@ func (x *NutritionFacts) Sum(y *NutritionFacts) *NutritionFacts {
 		VitaminE:           x.VitaminE + y.VitaminE,
 		VitaminK:           x.VitaminK + y.VitaminK,
 	}
+}
+
+func (x *NutritionFacts) Norm() *NutritionFacts {
+	if x == nil {
+		return nil
+	}
+
+	// Calculate the L2 norm (magnitude) of the vector
+	// It only takes most important nutrition facts into account
+
+	var norm float32
+
+	for _, val := range []float32{
+		//x.Cal,
+		x.FatTotal,
+		x.FatSaturated,
+		x.FatMonounsaturated,
+		x.FatPolyunsaturated,
+		//x.Cholesterol,
+		//x.Salt,
+		//x.Sodium,
+		//x.Potassium,
+		x.CarbohydrateTotal,
+		x.CarbohydrateSugar,
+		x.Protein,
+		x.Fiber,
+		//x.Calcium,
+		//x.Iron,
+		//x.Caffeine,
+		//x.VitaminA,
+		//x.VitaminB1,
+		//x.VitaminB2,
+		//x.VitaminB3,
+		//x.VitaminB4,
+		//x.VitaminB5,
+		//x.VitaminB6,
+		//x.VitaminB12,
+		//x.VitaminC,
+		//x.VitaminD,
+		//x.VitaminE,
+		//x.VitaminK,
+	} {
+		norm += val * val
+	}
+
+	norm = float32(math.Sqrt(float64(norm)))
+
+	// Normalize each field by dividing by the L2 norm
+	return x.Multiply(1 / norm)
+}
+
+// EuclideanDistance calculates the Euclidean distance between two NutritionFacts structs
+func (x *NutritionFacts) EuclideanDistance(y *NutritionFacts) float32 {
+	if x == nil || y == nil {
+		return 1
+	}
+
+	return float32(math.Sqrt(
+		//math.Pow(float64(x.Cal-y.Cal), 2) +
+		math.Pow(float64(x.FatTotal-y.FatTotal), 2) +
+			math.Pow(float64(x.FatSaturated-y.FatSaturated), 2) +
+			math.Pow(float64(x.FatMonounsaturated-y.FatMonounsaturated), 2) +
+			math.Pow(float64(x.FatPolyunsaturated-y.FatPolyunsaturated), 2) +
+			//math.Pow(float64(x.Cholesterol-y.Cholesterol), 2) +
+			//math.Pow(float64(x.Salt-y.Salt), 2) +
+			//math.Pow(float64(x.Sodium-y.Sodium), 2) +
+			//math.Pow(float64(x.Potassium-y.Potassium), 2) +
+			math.Pow(float64(x.CarbohydrateTotal-y.CarbohydrateTotal), 2) +
+			math.Pow(float64(x.CarbohydrateSugar-y.CarbohydrateSugar), 2) +
+			math.Pow(float64(x.Protein-y.Protein), 2) +
+			math.Pow(float64(x.Fiber-y.Fiber), 2),
+		//math.Pow(float64(x.Calcium-y.Calcium), 2) +
+		//math.Pow(float64(x.Iron-y.Iron), 2) +
+		//math.Pow(float64(x.Caffeine-y.Caffeine), 2) +
+		//math.Pow(float64(x.VitaminA-y.VitaminA), 2) +
+		//math.Pow(float64(x.VitaminB1-y.VitaminB1), 2) +
+		//math.Pow(float64(x.VitaminB2-y.VitaminB2), 2) +
+		//math.Pow(float64(x.VitaminB3-y.VitaminB3), 2) +
+		//math.Pow(float64(x.VitaminB4-y.VitaminB4), 2) +
+		//math.Pow(float64(x.VitaminB5-y.VitaminB5), 2) +
+		//math.Pow(float64(x.VitaminB6-y.VitaminB6), 2) +
+		//math.Pow(float64(x.VitaminB12-y.VitaminB12), 2) +
+		//math.Pow(float64(x.VitaminC-y.VitaminC), 2) +
+		//math.Pow(float64(x.VitaminD-y.VitaminD), 2) +
+		//math.Pow(float64(x.VitaminE-y.VitaminE), 2) +
+		//math.Pow(float64(x.VitaminK-y.VitaminK), 2),
+	))
 }

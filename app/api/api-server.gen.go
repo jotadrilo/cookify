@@ -26,6 +26,9 @@ type ServerInterface interface {
 	// (GET /products/{ParamProductID})
 	GetProductsParamProductID(c *gin.Context, paramProductID ParamProductID)
 
+	// (GET /products/{ParamProductID}/equivalents)
+	GetProductsParamProductIDEquivalents(c *gin.Context, paramProductID ParamProductID)
+
 	// (GET /users/{ParamUserID})
 	GetUsersParamUserID(c *gin.Context, paramUserID ParamUserID)
 
@@ -124,6 +127,30 @@ func (siw *ServerInterfaceWrapper) GetProductsParamProductID(c *gin.Context) {
 	}
 
 	siw.Handler.GetProductsParamProductID(c, paramProductID)
+}
+
+// GetProductsParamProductIDEquivalents operation middleware
+func (siw *ServerInterfaceWrapper) GetProductsParamProductIDEquivalents(c *gin.Context) {
+
+	var err error
+
+	// ------------- Path parameter "ParamProductID" -------------
+	var paramProductID ParamProductID
+
+	err = runtime.BindStyledParameterWithOptions("simple", "ParamProductID", c.Param("ParamProductID"), &paramProductID, runtime.BindStyledParameterOptions{Explode: false, Required: true})
+	if err != nil {
+		siw.ErrorHandler(c, fmt.Errorf("Invalid format for parameter ParamProductID: %w", err), http.StatusBadRequest)
+		return
+	}
+
+	for _, middleware := range siw.HandlerMiddlewares {
+		middleware(c)
+		if c.IsAborted() {
+			return
+		}
+	}
+
+	siw.Handler.GetProductsParamProductIDEquivalents(c, paramProductID)
 }
 
 // GetUsersParamUserID operation middleware
@@ -409,6 +436,7 @@ func RegisterHandlersWithOptions(router gin.IRouter, si ServerInterface, options
 	router.GET(options.BaseURL+"/products", wrapper.GetProducts)
 	router.POST(options.BaseURL+"/products", wrapper.PostProducts)
 	router.GET(options.BaseURL+"/products/:ParamProductID", wrapper.GetProductsParamProductID)
+	router.GET(options.BaseURL+"/products/:ParamProductID/equivalents", wrapper.GetProductsParamProductIDEquivalents)
 	router.GET(options.BaseURL+"/users/:ParamUserID", wrapper.GetUsersParamUserID)
 	router.GET(options.BaseURL+"/users/:ParamUserID/daily-menus", wrapper.GetUsersParamUserIDDailyMenus)
 	router.GET(options.BaseURL+"/users/:ParamUserID/daily-menus/:ParamDailyMenuID", wrapper.GetUsersParamUserIDDailyMenusParamDailyMenuID)
